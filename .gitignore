@@ -1,0 +1,12 @@
+node_modules
+dist
+data/raw
+*.local
+# raw source data (large; SAG.pdf is copyrighted)
+/*.xls
+/*.xml
+/*.xdxf
+/folkets_sv_en_public.json
+/*.tsv
+/*.pdf
+/swe-eng
