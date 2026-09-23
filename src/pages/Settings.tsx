@@ -71,6 +71,18 @@ export default function Settings() {
       </section>
 
       <section className="card">
+        <h2>Lessons</h2>
+        <label className="field">
+          <span>Explanations under each line</span>
+          <select value={settings.lessonLang} onChange={(e) => updateSettings({ lessonLang: e.target.value as 'en' | 'zh' | 'both' })}>
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="both">English + 中文</option>
+          </select>
+        </label>
+      </section>
+
+      <section className="card">
         <h2>Pronunciation</h2>
         <VoiceNotice />
         <label className="field">

@@ -29,7 +29,7 @@ async function startSession(extraNew = 0): Promise<Session> {
   const today = dayNumber(new Date());
   const log = s.days[today];
   const settings = extraNew ? { ...s.settings, newPerDay: (log?.n ?? 0) + extraNew } : s.settings;
-  const queue = buildQueue({ words: index, cards: s.cards, today, settings, log });
+  const queue = buildQueue({ words: index, cards: s.cards, today, settings, log, want: s.want });
   const words = await loadWords(queue.map((q) => q.id), index);
   const usable = queue.filter((q) => words.has(q.id));
   return { queue: usable, words, total: usable.length, done: 0 };
@@ -80,8 +80,11 @@ export default function Study() {
         const today = dayNumber(new Date());
         setState((s) => {
           const log = s.days[today] ?? { n: 0, r: 0 };
+          const want = { ...s.want };
+          delete want[item.id];
           return {
             ...s,
+            want,
             cards: { ...s.cards, [item.id]: answerCard(s.cards[item.id], correct, today, nowSec()) },
             days: { ...s.days, [today]: item.kind === 'new' ? { ...log, n: log.n + 1 } : { ...log, r: log.r + 1 } },
           };

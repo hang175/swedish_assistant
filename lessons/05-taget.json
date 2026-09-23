@@ -1,0 +1,25 @@
+{
+  "id": "05-taget",
+  "level": "A1",
+  "title": { "sv": "En biljett till Stockholm", "en": "A ticket to Stockholm", "zh": "一张去斯德哥尔摩的票" },
+  "scene": { "en": "Li buys a train ticket at the counter.", "zh": "Li 在售票窗口买火车票。" },
+  "vocab": [
+    { "sv": "tur och retur", "en": "return ticket (there and back)", "zh": "往返票" },
+    { "sv": "enkel", "en": "single (one-way)", "zh": "单程" },
+    { "sv": "fönsterplats", "en": "window seat", "zh": "靠窗座位" },
+    { "sv": "spår", "en": "platform / track", "zh": "站台 / 轨道" }
+  ],
+  "lines": [
+    ["Li", "Hej, jag vill köpa en biljett till Stockholm.", "Hi, I'd like to buy a ticket to Stockholm.", "你好，我想买一张去斯德哥尔摩的票。", "“Jag vill köpa …” is direct but perfectly polite in Sweden.", "“Jag vill köpa …” 说法直接，但在瑞典完全礼貌。"],
+    ["Säljare", "Enkel eller tur och retur?", "Single or return?", "单程还是往返？"],
+    ["Li", "Tur och retur, tack. Jag åker på fredag och kommer tillbaka på söndag.", "Return, please. I'm leaving on Friday and coming back on Sunday.", "往返，谢谢。我周五走，周日回来。", "“På fredag” = on Friday; days of the week are not capitalised.", "“på fredag” = 周五；星期名称不大写。"],
+    ["Säljare", "Vill du ha en fönsterplats?", "Would you like a window seat?", "要靠窗的座位吗？"],
+    ["Li", "Ja gärna.", "Yes, please.", "好的，谢谢。", "“Gärna” = gladly; “ja gärna” is the warm way to say yes to an offer.", "“gärna” = 乐意；“ja gärna” 是热情接受的说法。"],
+    ["Säljare", "Det blir fyrahundraåttio kronor.", "That's four hundred and eighty kronor.", "一共 480 克朗。"],
+    ["Li", "När går tåget?", "When does the train leave?", "火车几点开？", "Trains and buses “går” (go); people “åker” (travel).", "火车和公交用“går”；人出行用“åker”。"],
+    ["Säljare", "Kvart över åtta från spår tre.", "Quarter past eight from platform three.", "八点一刻，三号站台。", "Time words: kvart över (quarter past), halv nio (half past eight!), kvart i (quarter to).", "时间说法：kvart över（过一刻），halv nio（八点半！注意是“半到九”），kvart i（差一刻）。"],
+    ["Li", "Hur lång tid tar det?", "How long does it take?", "要多长时间？"],
+    ["Säljare", "Ungefär tre och en halv timme.", "About three and a half hours.", "大约三个半小时。"],
+    ["Li", "Perfekt, tack!", "Perfect, thanks!", "太好了，谢谢！"]
+  ]
+}

@@ -20,7 +20,8 @@ npm run dev
 | Command | What it does |
 |---|---|
 | `npm run dev` | start the app locally |
-| `npm run build:data` | rebuild the word bank in `public/data/` and write `build-report.md` |
+| `npm run build:data` | rebuild the word bank in `public/data/` and the lessons in `public/lessons/`; writes `build-report.md` |
+| `npm run build:lessons` | rebuild only the lessons (after editing `lessons/*.json`) |
 | `npm test` | unit tests for the spaced-repetition logic |
 | `npm run build` | type-check and produce the static site in `dist/` |
 
@@ -44,6 +45,16 @@ Never edit the JSON files by hand; change the script and rebuild. `build-report.
 - Spelling practice only uses words you have already met and never changes your review schedule.
 - Keyboard in Study: `1`–`4` answer, `Space`/`Enter` next, `R` replay the audio.
 - Settings → Backup exports/imports all progress as one JSON file.
+
+## Lessons (dialogues)
+
+`lessons/*.json` holds short everyday dialogues, one file per lesson: every line is `[speaker, Swedish, English, Chinese, note-en?, note-zh?]`
+plus a small glossary of phrases that are not in the word bank. `npm run build:lessons` links every Swedish word to the word bank through its
+inflected forms and writes `public/lessons/`. In the app a lesson can be played line by line or as a whole (browser voice, adjustable speed,
+loop, "hide Swedish" for listen-first practice); clicking a word shows its entry and can queue it as one of the next new words in Study.
+
+Pre-recorded audio: a line may be written as `{ "l": [...], "audio": "audio/<lesson>/<n>.mp3" }`; a file placed under `public/audio/` is then
+played instead of the browser voice, so lessons can be upgraded to studio or neural-TTS audio without touching the app.
 
 ## Accounts, sync and deployment
 

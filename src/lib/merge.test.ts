@@ -39,6 +39,13 @@ describe('mergeStates', () => {
     expect(m.cards[1]?.t).toBe(400);
     expect(m.gone).toBeUndefined();
   });
+  it('merges lesson progress and wanted words', () => {
+    const a = base({ want: { 5: 10, 6: 4 }, lessons: { l1: { p: 2, t: 100 } } });
+    const b = base({ cards: { 6: { b: 1, d: 3, s: 1, t: 8 } }, want: { 5: 12 }, lessons: { l1: { p: 1, d: 1, t: 90 }, l2: { p: 1, t: 50 } } });
+    const m = mergeStates(a, b);
+    expect(m.want).toEqual({ 5: 12 });
+    expect(m.lessons).toEqual({ l1: { p: 2, d: 1, t: 100 }, l2: { p: 1, t: 50 } });
+  });
   it('is idempotent and symmetric in content', () => {
     const a = base({ cards: { 1: { b: 2, d: 5, s: 1, t: 10 }, 2: { b: 1, d: 3, s: 0, t: 5 } }, days: { 1: { n: 2, r: 0 } }, st: 3 });
     const b = base({ cards: { 2: { b: 3, d: 8, s: 2, t: 9 } }, days: { 1: { n: 1, r: 4, done: 1 } }, st: 1 });

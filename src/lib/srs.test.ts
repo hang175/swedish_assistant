@@ -89,6 +89,12 @@ describe('buildQueue', () => {
     ]);
     expect(buildQueue({ words, cards: {}, today: 10, settings, log: { n: 2, r: 0 } })).toEqual([]);
   });
+  it('introduces words picked from a lesson first, whatever their level', () => {
+    const q = buildQueue({ words, cards: {}, today: 10, settings, log: undefined, want: { 20: 5, 11: 3, 999: 1 } });
+    expect(q.map((i) => i.id)).toEqual([11, 20]);
+    const q2 = buildQueue({ words, cards: { 20: { b: 1, d: 11, s: 1 } }, today: 10, settings, log: undefined, want: { 20: 5 } });
+    expect(q2.map((i) => i.id)).toEqual([1, 2]);
+  });
   it('ignores cards of words that are no longer in the word bank', () => {
     const q = buildQueue({ words, cards: { 999: { b: 1, d: 0, s: 0 } }, today: 10, settings: { ...settings, newPerDay: 0 }, log: undefined });
     expect(q).toEqual([]);

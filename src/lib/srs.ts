@@ -43,6 +43,8 @@ export interface Settings {
   voiceURI: string;
   /** ask "en or ett?" before the meaning for nouns; a wrong article counts as a wrong answer */
   askGender: boolean;
+  /** language of the explanations in Lessons */
+  lessonLang: 'en' | 'zh' | 'both';
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -53,6 +55,7 @@ export const DEFAULT_SETTINGS: Settings = {
   rate: 0.9,
   voiceURI: '',
   askGender: true,
+  lessonLang: 'en',
 };
 
 /** "Study day" number in local time; a new day starts at 04:00. */
@@ -101,6 +104,8 @@ export interface QueueInput {
   today: number;
   settings: Pick<Settings, 'newPerDay' | 'reviewLimit' | 'startLevel'>;
   log: DayLog | undefined;
+  /** words the user picked from a lesson: introduced first, regardless of level (id → when picked) */
+  want?: Record<number, number>;
 }
 
 /** Order for introducing new words: start level upwards, then by frequency rank. */
@@ -112,7 +117,7 @@ export function newWordOrder(words: WordRef[], startLevel: Level): WordRef[] {
 }
 
 /** What is left to do today: due reviews (most overdue first, capped) followed by new words. */
-export function buildQueue({ words, cards, today, settings, log }: QueueInput): QueueItem[] {
+export function buildQueue({ words, cards, today, settings, log, want }: QueueInput): QueueItem[] {
   const reviewsLeft = Math.max(0, settings.reviewLimit - (log?.r ?? 0));
   const newLeft = Math.max(0, settings.newPerDay - (log?.n ?? 0));
   const known = new Set(words.map((w) => w.id));
@@ -124,7 +129,13 @@ export function buildQueue({ words, cards, today, settings, log }: QueueInput): 
     .slice(0, reviewsLeft)
     .map(({ id }): QueueItem => ({ id, kind: 'review' }));
 
-  const fresh = newWordOrder(words, settings.startLevel)
+  const wanted = Object.entries(want ?? {})
+    .map(([id, t]) => ({ id: Number(id), t }))
+    .filter(({ id }) => known.has(id) && !cards[id])
+    .sort((a, b) => a.t - b.t || a.id - b.id)
+    .map(({ id }) => ({ id, lv: 'A1' as Level, rank: 0 }));
+  const wantedIds = new Set(wanted.map((w) => w.id));
+  const fresh = [...wanted, ...newWordOrder(words, settings.startLevel).filter((w) => !wantedIds.has(w.id))]
     .filter((w) => !cards[w.id])
     .slice(0, newLeft)
     .map((w): QueueItem => ({ id: w.id, kind: 'new' }));

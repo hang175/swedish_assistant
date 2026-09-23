@@ -1,0 +1,25 @@
+{
+  "id": "03-mataffaren",
+  "level": "A1",
+  "title": { "sv": "I mataffären", "en": "In the grocery shop", "zh": "在超市" },
+  "scene": { "en": "Li looks for eggs and pays at the checkout.", "zh": "Li 找鸡蛋，然后在收银台付款。" },
+  "vocab": [
+    { "sv": "expedit", "en": "shop assistant", "zh": "店员" },
+    { "sv": "medlemskort", "en": "membership card", "zh": "会员卡" },
+    { "sv": "papperspåse", "en": "paper bag", "zh": "纸袋" }
+  ],
+  "lines": [
+    ["Li", "Ursäkta, var hittar jag ägg?", "Excuse me, where do I find eggs?", "打扰一下，鸡蛋在哪里？", "“Ursäkta” opens almost every question to a stranger.", "“Ursäkta” 几乎是向陌生人提问的固定开头。"],
+    ["Expedit", "Äggen finns längst bort, bredvid mjölken.", "The eggs are at the far end, next to the milk.", "鸡蛋在最里面，牛奶旁边。", "“Finns” = is/are (available). “Längst bort” = furthest away.", "“finns” 表示“有/在”。“längst bort” = 最远处。"],
+    ["Li", "Tack. Har ni färskt bröd?", "Thanks. Do you have fresh bread?", "谢谢。你们有新鲜面包吗？", "Staff are addressed as “ni” (you, plural) because you mean the shop.", "对店员用“ni”（你们），指的是整个店。"],
+    ["Expedit", "Ja, det finns vid ingången.", "Yes, it's by the entrance.", "有，在入口那边。"],
+    ["Kassör", "Hej! Har du medlemskort?", "Hi! Do you have a membership card?", "你好！有会员卡吗？"],
+    ["Li", "Nej, det har jag inte.", "No, I don't.", "没有。", "Answer pattern: “Nej, det har jag inte” – the object “det” comes first, then the verb.", "回答模式：“Nej, det har jag inte”，宾语“det”放句首，动词紧随其后。"],
+    ["Kassör", "Vill du ha en påse?", "Would you like a bag?", "要袋子吗？"],
+    ["Li", "Ja tack, en papperspåse.", "Yes please, a paper bag.", "要，谢谢，一个纸袋。"],
+    ["Kassör", "Det blir etthundraåttionio kronor.", "That's one hundred and eighty-nine kronor.", "一共 189 克朗。"],
+    ["Li", "Kan jag betala med kort?", "Can I pay by card?", "可以刷卡吗？"],
+    ["Kassör", "Absolut. Vill du ha kvittot?", "Absolutely. Do you want the receipt?", "当然。要收据吗？"],
+    ["Li", "Nej tack. Hej då!", "No thanks. Bye!", "不用了，谢谢。再见！"]
+  ]
+}

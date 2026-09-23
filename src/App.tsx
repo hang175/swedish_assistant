@@ -3,6 +3,7 @@ import Today from './pages/Today';
 import Study from './pages/Study';
 import { SyncBadge } from './components/Account';
 
+const Lessons = lazy(() => import('./pages/Lessons'));
 const Dictionary = lazy(() => import('./pages/Dictionary'));
 const Spelling = lazy(() => import('./pages/Spelling'));
 const Stats = lazy(() => import('./pages/Stats'));
@@ -12,6 +13,7 @@ const Settings = lazy(() => import('./pages/Settings'));
 const PAGES = [
   ['today', 'Today', Today],
   ['study', 'Study', Study],
+  ['lessons', 'Lessons', Lessons],
   ['dictionary', 'Dictionary', Dictionary],
   ['spelling', 'Spelling', Spelling],
   ['grammar', 'Grammar', Grammar],

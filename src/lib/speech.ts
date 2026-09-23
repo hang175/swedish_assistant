@@ -59,3 +59,32 @@ export function speak(text: string, attempt = 0): void {
 
 /** What to read aloud for a word: nouns get their article, verbs their infinitive marker is left out. */
 export const spokenForm = (w: { w: string; g?: string }) => (w.g === 'en' || w.g === 'ett' ? `${w.g} ${w.w}` : w.w);
+
+/** Speak one text and resolve when it has finished (or was cancelled / no voice available). */
+export function speakAsync(text: string, rateOverride?: number): Promise<void> {
+  return new Promise((resolve) => {
+    if (!synth || !text) return resolve();
+    const { rate, voiceURI } = getState().settings;
+    const voices = swedishVoices();
+    if (!voices.length) return resolve();
+    const voice = voices.find((v) => v.voiceURI === voiceURI) ?? voices[0];
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = voice.lang;
+    u.voice = voice;
+    u.rate = rateOverride ?? rate;
+    let done = false;
+    const finish = () => {
+      if (!done) {
+        done = true;
+        resolve();
+      }
+    };
+    u.onend = finish;
+    u.onerror = finish;
+    // safety net: some browsers never fire onend after cancel()
+    setTimeout(finish, 1000 + text.length * 250);
+    synth.speak(u);
+  });
+}
+export const stopSpeaking = () => synth?.cancel();

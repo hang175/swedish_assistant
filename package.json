@@ -8,8 +8,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "build:data": "tsx scripts/build-data.ts",
-    "test": "vitest run"
+    "build:data": "tsx scripts/build-data.ts && tsx scripts/build-lessons.ts",
+    "test": "vitest run",
+    "build:lessons": "tsx scripts/build-lessons.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",

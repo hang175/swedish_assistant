@@ -225,3 +225,45 @@ form.stack input { width: 100%; padding: .6rem .8rem; }
   .option { min-height: 3.4rem; }
   .articles .grid2 { grid-template-columns: 1fr 1fr; }
 }
+
+/* lessons */
+.lessonlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .8rem; }
+.lessoncard { display: flex; gap: .8rem; align-items: center; color: inherit; text-decoration: none; }
+.lessoncard:hover { border-color: var(--accent); }
+.lessoncard.done { border-color: var(--ok); }
+.lessoncard .num { flex: none; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center; font-weight: 700; }
+.lessoncard .body { min-width: 0; flex: 1; }
+.lessoncard .check { color: var(--ok); font-weight: 700; font-size: 1.3rem; }
+.lesson { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: .9rem; }
+.lesson h1 { margin-bottom: 0; }
+.scene { font-style: italic; color: var(--muted); }
+.player .row { gap: 1rem; }
+label.inline { display: inline-flex; align-items: center; gap: .4rem; font-size: .9rem; }
+label.inline input[type='range'] { width: 110px; }
+.dialogue { display: flex; flex-direction: column; gap: .7rem; }
+.dline { display: grid; grid-template-columns: 5.5rem 1fr 2rem; gap: .6rem; align-items: start; }
+.dline .who { font-size: .8rem; font-weight: 600; color: var(--muted); padding-top: .7rem; text-align: right; }
+.dline.s1 .who { color: var(--accent); }
+.bubble { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: .6rem .9rem; cursor: pointer; }
+.dline.s1 .bubble { background: var(--accent-soft); }
+.dline.current .bubble { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.bubble .sv { font-size: 1.15rem; font-weight: 500; line-height: 1.6; }
+.bubble .sv.hidden { filter: blur(6px); user-select: none; }
+.bubble .en { color: var(--muted); margin-top: .2rem; }
+.lnote { font-size: .82rem; color: var(--muted); margin-top: .3rem; padding-left: .6rem; border-left: 2px solid var(--line); }
+.tok { border: 0; background: none; padding: 0 .05em; margin: 0; font: inherit; color: inherit; cursor: pointer; border-radius: 3px; text-decoration: underline dotted; text-underline-offset: 3px; text-decoration-color: var(--muted); }
+.tok:hover { background: var(--yellow); color: #000; }
+.tok.new { text-decoration-color: var(--muted); }
+.tok.learning { text-decoration-color: var(--yellow); text-decoration-style: solid; }
+.tok.mastered { text-decoration: none; }
+.tok.vocab { text-decoration-color: var(--accent); text-decoration-style: solid; }
+.tok.wanted { background: var(--accent-soft); }
+.glossary { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .3rem .8rem; }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: grid; place-items: center; padding: 1rem; z-index: 20; }
+.popup { max-width: 560px; width: 100%; max-height: 85vh; overflow: auto; }
+.popup .wide { width: 100%; margin-top: .6rem; }
+@media (max-width: 800px) {
+  .dline { grid-template-columns: 1fr; gap: .15rem; }
+  .dline .who { text-align: left; padding-top: 0; }
+  .dline .speak { display: none; }
+}

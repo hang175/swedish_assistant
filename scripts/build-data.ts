@@ -213,7 +213,16 @@ const SUPPLEMENT: Record<string, { def: string; forms?: string[] }> = {
   'skola|aux verb': { def: 'shall, will, be going to', forms: ['skulle', 'skolat', 'ska'] },
   'torde|aux verb': { def: 'probably is, should' },
   'mitt|pronoun': { def: 'my, mine (ett-form)' },
+  'imorgon|adverb': { def: 'tomorrow' },
 };
+
+/** extra rows for very common words that are missing from the Kelly list itself (ids 90000+) */
+const EXTRA_ROWS: { head: string; pos: string; level: Level; def: string; forms?: string[]; gram?: string }[] = [
+  { head: 'finnas', pos: 'verb', level: 'A1', def: 'exist, be there (det finns = there is)', forms: ['fanns', 'funnits', 'finns', 'finnas', 'finns'] },
+  { head: 'varsågod', pos: 'interj', level: 'A1', def: 'here you are; you are welcome' },
+  { head: 'ses', pos: 'verb', level: 'A1', def: 'see each other, meet (vi ses = see you)', forms: ['sågs', 'setts', 'ses', 'ses', 'ses'] },
+  { head: 'mer', pos: 'adverb', level: 'A1', def: 'more' },
+];
 
 type Group = 'noun' | 'verb' | 'adj' | 'adv' | 'func';
 const groupOf = (pos: string): Group =>
@@ -380,6 +389,11 @@ function main() {
     return b.wpm - a.wpm || a.id - b.id;
   });
 
+  EXTRA_ROWS.forEach((x, i) => {
+    if (kelly.some((k) => k.head.toLowerCase() === x.head && k.pos === x.pos)) return;
+    ordered.push({ id: 90000 + i, wpm: 0, tier: 2, level: x.level, gram: x.gram ?? '', raw: x.head, head: x.head, pos: x.pos });
+    SUPPLEMENT[`${x.head}|${x.pos}`] = { def: x.def, forms: x.forms };
+  });
   for (const k of ordered) {
     const candidates = [k.head, k.head.replace(/^att /, ''), k.head.replace(/ sig$/, '')];
     let entries: FEntry[] | undefined;

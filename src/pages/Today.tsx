@@ -21,7 +21,7 @@ export default function Today() {
   const { data: meta } = useAsync(loadMeta, []);
   const today = dayNumber(new Date());
   const log = state.days[today] ?? { n: 0, r: 0 };
-  const queue = index ? buildQueue({ words: index, cards: state.cards, today, settings: state.settings, log }) : [];
+  const queue = index ? buildQueue({ words: index, cards: state.cards, today, settings: state.settings, log, want: state.want }) : [];
   const newLeft = queue.filter((q) => q.kind === 'new').length;
   const reviewsLeft = queue.filter((q) => q.kind === 'review').length;
   const newGoal = log.n + newLeft;
@@ -45,9 +45,14 @@ export default function Today() {
                 ? `${newLeft} new word${newLeft === 1 ? '' : 's'} and ${reviewsLeft} review${reviewsLeft === 1 ? '' : 's'} left. Finish them all to check in.`
                 : 'Nothing is due right now.'}
           </p>
-          <a className="button primary" href="#/study">
-            {done ? 'Study more' : log.n + log.r > 0 ? 'Continue' : 'Start studying'}
-          </a>
+          <div className="row wrap">
+            <a className="button primary" href="#/study">
+              {done ? 'Study more' : log.n + log.r > 0 ? 'Continue' : 'Start studying'}
+            </a>
+            <a className="button" href="#/lessons">
+              Lessons
+            </a>
+          </div>
         </div>
         <div className="streak" title="Consecutive days with the daily task completed">
           <b>{run}</b>

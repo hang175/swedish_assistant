@@ -1,0 +1,26 @@
+{
+  "id": "11-boka-tid",
+  "level": "A1",
+  "title": { "sv": "Boka en tid", "en": "Booking an appointment", "zh": "预约" },
+  "scene": { "en": "Li phones a hairdresser to book a haircut.", "zh": "Li 打电话给理发店预约剪发。" },
+  "vocab": [
+    { "sv": "boka en tid", "en": "to book an appointment", "zh": "预约（时间）" },
+    { "sv": "klippning", "en": "haircut", "zh": "剪发" },
+    { "sv": "javisst", "en": "certainly, of course", "zh": "当然可以" },
+    { "sv": "stava", "en": "to spell", "zh": "拼写" }
+  ],
+  "lines": [
+    ["Frisör", "Salong Klippet, det är Maria.", "Salong Klippet, this is Maria.", "Klippet 理发店，我是 Maria。", "On the phone you say “det är” + your name.", "打电话时用“det är” + 名字介绍自己。"],
+    ["Li", "Hej, jag skulle vilja boka en tid för klippning.", "Hi, I'd like to book an appointment for a haircut.", "你好，我想预约剪发。", "“Jag skulle vilja …” = I would like to … – the polite version of “jag vill”.", "“Jag skulle vilja …” = 我想……，是“jag vill”的礼貌版。"],
+    ["Frisör", "Javisst. När vill du komma?", "Certainly. When would you like to come?", "当然。你想什么时候来？"],
+    ["Li", "Har ni något på torsdag eftermiddag?", "Do you have anything on Thursday afternoon?", "周四下午有空位吗？"],
+    ["Frisör", "Torsdag klockan tre är ledigt. Passar det?", "Thursday at three is free. Does that work?", "周四三点有空。可以吗？"],
+    ["Li", "Ja, det passar bra.", "Yes, that works well.", "可以。"],
+    ["Frisör", "Vad heter du?", "What's your name?", "你叫什么名字？"],
+    ["Li", "Li Wang. Ska jag stava?", "Li Wang. Shall I spell it?", "Li Wang。要我拼一下吗？"],
+    ["Frisör", "Ja tack. Och ditt telefonnummer?", "Yes please. And your phone number?", "好的，谢谢。你的电话号码？"],
+    ["Li", "Noll sju noll, ett två tre, fyra fem, sex sju.", "Zero seven zero, one two three, four five, six seven.", "070 123 45 67。", "Swedish phone numbers are read digit by digit in groups: 070-123 45 67.", "瑞典电话号码按组逐个数字读：070-123 45 67。"],
+    ["Frisör", "Tack. Då ses vi på torsdag!", "Thanks. See you on Thursday!", "谢谢。周四见！"],
+    ["Li", "Tack, hej då!", "Thanks, bye!", "谢谢，再见！"]
+  ]
+}

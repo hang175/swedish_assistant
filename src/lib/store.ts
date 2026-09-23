@@ -12,6 +12,16 @@ export interface AppState {
   st?: number;
   /** cards the user removed again (undo “known”): id → when. Needed so a sync does not bring them back. */
   gone?: Record<number, number>;
+  /** words picked from lessons to learn next: id → when */
+  want?: Record<number, number>;
+  /** lesson progress: id → { p: times played through, d: marked done, t: last change } */
+  lessons?: Record<string, LessonProgress>;
+}
+
+export interface LessonProgress {
+  p: number;
+  d?: 1;
+  t: number;
 }
 
 export const nowSec = () => Math.floor(Date.now() / 1000);
@@ -95,10 +105,26 @@ export function validate(data: unknown): AppState {
     rate: clamp(s.rate, 0.5, 1.5, DEFAULT_SETTINGS.rate),
     voiceURI: typeof s.voiceURI === 'string' ? s.voiceURI : '',
     askGender: typeof s.askGender === 'boolean' ? s.askGender : DEFAULT_SETTINGS.askGender,
+    lessonLang: s.lessonLang === 'zh' || s.lessonLang === 'both' ? s.lessonLang : 'en',
   };
   const gone: Record<number, number> = {};
   if (d.gone && typeof d.gone === 'object') for (const [id, t] of Object.entries(d.gone as Record<string, unknown>)) if (/^\d+$/.test(id) && int(t)) gone[Number(id)] = t as number;
-  return { v: 1, settings, cards, days, ...(int(d.st) ? { st: d.st as number } : {}), ...(Object.keys(gone).length ? { gone } : {}) };
+  const want: Record<number, number> = {};
+  if (d.want && typeof d.want === 'object') for (const [id, t] of Object.entries(d.want as Record<string, unknown>)) if (/^\d+$/.test(id) && int(t)) want[Number(id)] = t as number;
+  const lessons: Record<string, LessonProgress> = {};
+  if (d.lessons && typeof d.lessons === 'object')
+    for (const [id, l] of Object.entries(d.lessons as Record<string, Record<string, unknown>>))
+      if (l && int(l.p) && int(l.t) && /^[\w-]+$/.test(id)) lessons[id] = { p: l.p as number, t: l.t as number, ...(l.d ? { d: 1 as const } : {}) };
+  return {
+    v: 1,
+    settings,
+    cards,
+    days,
+    ...(int(d.st) ? { st: d.st as number } : {}),
+    ...(Object.keys(gone).length ? { gone } : {}),
+    ...(Object.keys(want).length ? { want } : {}),
+    ...(Object.keys(lessons).length ? { lessons } : {}),
+  };
 }
 
 export function exportBackup(): void {
@@ -116,4 +142,22 @@ export function importBackup(next: AppState): void {
 
 export function resetAll(): void {
   setState(() => empty());
+}
+
+/** Queue a word from a lesson for today's new words (no effect if it is already being learned). */
+export function wantWord(id: number): void {
+  setState((s) => (s.cards[id] ? s : { ...s, want: { ...s.want, [id]: nowSec() } }));
+}
+export function unwantWord(id: number): void {
+  setState((s) => {
+    const want = { ...s.want };
+    delete want[id];
+    return { ...s, want };
+  });
+}
+export function updateLesson(id: string, patch: Partial<LessonProgress>): void {
+  setState((s) => {
+    const cur = s.lessons?.[id] ?? { p: 0, t: 0 };
+    return { ...s, lessons: { ...s.lessons, [id]: { ...cur, ...patch, t: nowSec() } } };
+  });
 }

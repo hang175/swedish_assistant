@@ -1,0 +1,27 @@
+{
+  "id": "07-vardcentralen",
+  "level": "A1",
+  "title": { "sv": "På vårdcentralen", "en": "At the health centre", "zh": "在社区医疗中心" },
+  "scene": { "en": "Li has a sore throat and a fever and sees a nurse and a doctor.", "zh": "Li 喉咙痛、发烧，先见护士再见医生。" },
+  "vocab": [
+    { "sv": "vårdcentral", "en": "primary-care health centre", "zh": "社区医疗中心（初级医疗）" },
+    { "sv": "ha ont i", "en": "to have pain in", "zh": "……疼" },
+    { "sv": "förkylning", "en": "a cold", "zh": "感冒" },
+    { "sv": "värktablett", "en": "painkiller", "zh": "止痛片" },
+    { "sv": "väntrum", "en": "waiting room", "zh": "候诊室" }
+  ],
+  "lines": [
+    ["Sköterska", "Hej, vad kan jag hjälpa dig med?", "Hi, what can I help you with?", "你好，有什么可以帮你？"],
+    ["Li", "Hej. Jag har ont i halsen och jag har feber.", "Hi. I have a sore throat and a fever.", "你好。我喉咙痛，还发烧。", "Body pain: “Jag har ont i” + the definite form: halsen, huvudet, magen, ryggen.", "身体疼痛：“Jag har ont i” + 定指形式：halsen（喉咙）、huvudet（头）、magen（肚子）、ryggen（背）。"],
+    ["Sköterska", "Hur länge har du varit sjuk?", "How long have you been ill?", "你病了多久了？"],
+    ["Li", "Sedan i måndags. Tre dagar.", "Since Monday. Three days.", "从周一开始，三天了。", "“I måndags” = last Monday (past); “på måndag” = next Monday.", "“i måndags” = 上周一（过去）；“på måndag” = 下周一。"],
+    ["Sköterska", "Har du hosta?", "Do you have a cough?", "咳嗽吗？"],
+    ["Li", "Ja, lite. Och jag är väldigt trött.", "Yes, a little. And I'm very tired.", "有一点。而且我很累。"],
+    ["Sköterska", "Kan jag få se ditt kort?", "May I see your card?", "能看一下你的卡吗？", "“Kan jag få …?” = may I have …? Very common polite request.", "“Kan jag få …?” = 我可以要/看……吗？很常用的礼貌请求。"],
+    ["Li", "Ja, varsågod.", "Yes, here you are.", "好的，给你。"],
+    ["Sköterska", "Tack. Sätt dig i väntrummet, så ropar doktorn upp dig.", "Thanks. Take a seat in the waiting room and the doctor will call you.", "谢谢。请在候诊室坐一下，医生会叫你。", "“Sätt dig” = sit down (reflexive). “Så” here links two actions: do this, and then that happens.", "“Sätt dig” = 坐下（反身动词）。这里的“så”连接两个动作：你这样做，然后会发生那个。"],
+    ["Läkare", "Det är en vanlig förkylning. Vila och drick mycket vatten.", "It's a common cold. Rest and drink plenty of water.", "是普通感冒。多休息，多喝水。"],
+    ["Li", "Behöver jag medicin?", "Do I need medicine?", "我需要吃药吗？"],
+    ["Läkare", "Nej, men du kan ta en värktablett om du behöver.", "No, but you can take a painkiller if you need to.", "不需要，但需要的话可以吃一片止痛药。"]
+  ]
+}
