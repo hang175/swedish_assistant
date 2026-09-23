@@ -77,3 +77,11 @@ Configuration.
 
 Application code and grammar notes: MIT (`LICENSE`). Generated word bank in `public/data/`: CC BY-SA 4.0 (`LICENSE-DATA`). The grammar notes are original
 text; no textbook or reference-grammar content is included.
+
+## Lesson audio (optional, Azure text-to-speech)
+
+The browser voice differs a lot between browsers (Edge has good Swedish neural voices, Chrome does not). To make every device sound the same, pre-generate
+one mp3 per line with Azure Speech: create a free (F0) Speech resource in the Azure portal, put its key and region into `.env.local`
+(`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`), then run `npm run build:audio` followed by `npm run build:lessons`. Each character is cast in
+`audio/voices.json` (three Swedish voices, with pitch/rate tweaks so more characters can share them). Clips land in `public/audio/<lesson>/` and are
+picked up automatically; unchanged lines are not regenerated. The free tier allows 500 000 characters per month; all lessons together are a few thousand.

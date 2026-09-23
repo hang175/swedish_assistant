@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "build:data": "tsx scripts/build-data.ts && tsx scripts/build-lessons.ts",
     "test": "vitest run",
-    "build:lessons": "tsx scripts/build-lessons.ts"
+    "build:lessons": "tsx scripts/build-lessons.ts",
+    "build:audio": "tsx scripts/build-audio.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",

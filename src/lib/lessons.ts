@@ -25,7 +25,7 @@ export interface Lesson {
   /** group in the list, e.g. "Basics" or "Season 1" */
   series?: string;
   /** short narration before the dialogue */
-  intro?: { sv: string; en: string; zh: string };
+  intro?: { sv: string; en: string; zh: string; audio?: string };
   /** indices of the lines worth memorising whole */
   key?: number[];
   title: { sv: string; en: string; zh: string };

@@ -1,9 +1,15 @@
 import type { Example, Word } from '../types';
-import { speak, spokenForm } from '../lib/speech';
+import { playClipAsync, speak, spokenForm } from '../lib/speech';
 
-export function SpeakButton({ text, label = 'Play', big }: { text: string; label?: string; big?: boolean }) {
+/** Plays a pre-generated clip when given, otherwise the browser voice. */
+export function playClip(audio: string | undefined, text: string): void {
+  if (!audio) return speak(text);
+  void playClipAsync(audio, text);
+}
+
+export function SpeakButton({ text, label = 'Play', big, audio }: { text: string; label?: string; big?: boolean; audio?: string }) {
   return (
-    <button type="button" className={big ? 'speak big' : 'speak'} title={label} aria-label={label} onClick={() => speak(text)}>
+    <button type="button" className={big ? 'speak big' : 'speak'} title={label} aria-label={label} onClick={() => playClip(audio, text)}>
       <svg viewBox="0 0 24 24" width={big ? 22 : 16} height={big ? 22 : 16} aria-hidden="true">
         <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" />
         <path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />

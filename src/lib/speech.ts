@@ -40,6 +40,7 @@ export function useSwedishVoices(): SpeechSynthesisVoice[] | undefined {
  * the fallback would be an English voice reading Swedish spelling, which teaches the wrong sounds.
  */
 export function speak(text: string, attempt = 0): void {
+  if (currentClip) stopAll();
   if (!synth || !text) return;
   const { rate, voiceURI } = getState().settings;
   const voices = swedishVoices();
@@ -63,6 +64,7 @@ export const spokenForm = (w: { w: string; g?: string }) => (w.g === 'en' || w.g
 /** Speak one text and resolve when it has finished (or was cancelled / no voice available). */
 export function speakAsync(text: string, rateOverride?: number): Promise<void> {
   return new Promise((resolve) => {
+    if (currentClip) stopAll();
     if (!synth || !text) return resolve();
     const { rate, voiceURI } = getState().settings;
     const voices = swedishVoices();
@@ -87,4 +89,43 @@ export function speakAsync(text: string, rateOverride?: number): Promise<void> {
     synth.speak(u);
   });
 }
-export const stopSpeaking = () => synth?.cancel();
+export const stopSpeaking = () => stopAll();
+
+/* ---- pre-generated clips: one player, so "stop" always works and clips never overlap */
+let currentClip: HTMLAudioElement | null = null;
+
+export function stopAll(): void {
+  synth?.cancel();
+  if (currentClip) {
+    currentClip.pause();
+    currentClip.src = '';
+    currentClip = null;
+  }
+}
+
+/** Play an mp3 (relative to public/) and resolve when it ends or is stopped. Falls back to the browser voice if the file fails. */
+export function playClipAsync(audio: string, fallbackText: string, rate = 1): Promise<void> {
+  stopAll();
+  return new Promise((resolve) => {
+    const a = new Audio(import.meta.env.BASE_URL + audio);
+    currentClip = a;
+    a.playbackRate = rate;
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      if (currentClip === a) currentClip = null;
+      resolve();
+    };
+    a.onended = finish;
+    a.onpause = finish;
+    a.onerror = () => {
+      finish();
+      void speakAsync(fallbackText, rate);
+    };
+    a.play().catch(() => {
+      finish();
+      void speakAsync(fallbackText, rate);
+    });
+  });
+}

@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useState } from 'react';
 import Today from './pages/Today';
 import Study from './pages/Study';
 import { SyncBadge } from './components/Account';
+import { stopAll } from './lib/speech';
 
 const Lessons = lazy(() => import('./pages/Lessons'));
 const Dictionary = lazy(() => import('./pages/Dictionary'));
@@ -28,7 +29,7 @@ export default function App() {
   useEffect(() => {
     const onHash = () => {
       setRoute(current());
-      window.speechSynthesis?.cancel();
+      stopAll();
     };
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);

@@ -273,3 +273,4 @@ label.inline input[type='range'] { width: 110px; }
 .intro .sv { font-weight: 500; }
 .keylines .example { padding: .3rem .4rem; border-radius: 8px; }
 .keylines .example.current { background: var(--accent-soft); }
+.intro.current { box-shadow: 0 0 0 2px var(--accent); }

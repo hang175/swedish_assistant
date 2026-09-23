@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Word } from '../types';
 import { loadIndex, loadWords, useAsync } from '../lib/data';
 import { loadLesson, loadLessonIndex, type LessonLine, type Token } from '../lib/lessons';
-import { speakAsync, stopSpeaking } from '../lib/speech';
+import { playClipAsync, speakAsync, stopSpeaking } from '../lib/speech';
 import { unwantWord, updateLesson, useAppState, wantWord } from '../lib/store';
 import { statusOf } from '../lib/srs';
 import { SpeakButton, WordDetails } from '../components/WordBits';
@@ -103,15 +103,8 @@ function LessonView({ id }: { id: string }) {
 
   const playLine = useCallback(
     async (line: LessonLine, rate: number) => {
-      if (line.audio) {
-        await new Promise<void>((resolve) => {
-          const a = new Audio(import.meta.env.BASE_URL + line.audio);
-          a.playbackRate = rate;
-          a.onended = () => resolve();
-          a.onerror = () => resolve();
-          a.play().catch(() => resolve());
-        });
-      } else await speakAsync(line.sv, rate);
+      if (line.audio) await playClipAsync(line.audio, line.sv, rate);
+      else await speakAsync(line.sv, rate);
     },
     [],
   );
@@ -123,6 +116,12 @@ function LessonView({ id }: { id: string }) {
       setPlaying(true);
       const order = only ?? lesson.lines.map((_, i) => i);
       let from = Math.max(0, order.indexOf(start));
+      if (!only && from === 0 && lesson.intro) {
+        setCurrent(-1);
+        await playLine({ sv: lesson.intro.sv, audio: lesson.intro.audio } as LessonLine, speed);
+        if (run.current !== token) return;
+        await new Promise((r) => setTimeout(r, 900));
+      }
       for (;;) {
         for (let k = from; k < order.length; k++) {
           const i = order[k];
@@ -203,9 +202,9 @@ function LessonView({ id }: { id: string }) {
       <p className="muted">{tr(lesson.title)}</p>
       <p className="scene">{tr(lesson.scene)}</p>
       {lesson.intro && (
-        <div className="card intro">
+        <div className={`card intro ${current === -1 ? 'current' : ''}`}>
           <div className="row">
-            <SpeakButton text={lesson.intro.sv} label="Play narration" />
+            <SpeakButton text={lesson.intro.sv} label="Play narration" audio={lesson.intro.audio} />
             <div>
               <div className="sv" lang="sv">
                 {lesson.intro.sv}
@@ -274,7 +273,7 @@ function LessonView({ id }: { id: string }) {
                 {showTrans && <div className="en">{tr(line)}</div>}
                 {showTrans && line.note && <div className="lnote">{tr(line.note)}</div>}
               </div>
-              <SpeakButton text={line.sv} label="Play line" />
+              <SpeakButton text={line.sv} label="Play line" audio={line.audio} />
             </div>
           );
         })}
@@ -288,7 +287,7 @@ function LessonView({ id }: { id: string }) {
           </div>
           {lesson.key.map((i) => (
             <div className={`example ${current === i ? 'current' : ''}`} key={i}>
-              <SpeakButton text={lesson.lines[i].sv} label="Play" />
+              <SpeakButton text={lesson.lines[i].sv} label="Play" audio={lesson.lines[i].audio} />
               <div>
                 <div className="sv" lang="sv">
                   {lesson.lines[i].sv}

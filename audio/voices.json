@@ -1,0 +1,29 @@
+{
+  "_comment": "Azure Swedish neural voices: sv-SE-SofieNeural (female), sv-SE-HilleviNeural (female), sv-SE-MattiasNeural (male). Pitch/rate tweaks let two characters share a voice. Any speaker not listed uses 'default'.",
+  "narrator": { "voice": "sv-SE-HilleviNeural", "rate": "-8%" },
+  "default": { "voice": "sv-SE-MattiasNeural" },
+  "speakers": {
+    "Li": { "voice": "sv-SE-MattiasNeural", "pitch": "+4%", "rate": "-6%" },
+    "Erik": { "voice": "sv-SE-MattiasNeural", "pitch": "-6%", "rate": "+4%" },
+    "Hampus": { "voice": "sv-SE-MattiasNeural", "pitch": "-12%" },
+    "Emma": { "voice": "sv-SE-SofieNeural" },
+    "Sara": { "voice": "sv-SE-HilleviNeural", "rate": "+6%" },
+    "Anna": { "voice": "sv-SE-SofieNeural" },
+    "Barista": { "voice": "sv-SE-HilleviNeural" },
+    "Expedit": { "voice": "sv-SE-MattiasNeural", "pitch": "-4%" },
+    "Kassör": { "voice": "sv-SE-SofieNeural", "pitch": "-3%" },
+    "Man": { "voice": "sv-SE-MattiasNeural", "pitch": "-8%" },
+    "Säljare": { "voice": "sv-SE-HilleviNeural" },
+    "Sköterska": { "voice": "sv-SE-SofieNeural" },
+    "Läkare": { "voice": "sv-SE-MattiasNeural", "pitch": "-8%", "rate": "-4%" },
+    "Läraren": { "voice": "sv-SE-HilleviNeural", "rate": "-4%" },
+    "Hyresvärd": { "voice": "sv-SE-MattiasNeural", "pitch": "-10%" },
+    "Servitör": { "voice": "sv-SE-MattiasNeural", "pitch": "-3%" },
+    "Frisör": { "voice": "sv-SE-SofieNeural", "pitch": "+3%" },
+    "Budet": { "voice": "sv-SE-MattiasNeural", "pitch": "-5%", "rate": "+8%" },
+    "Kundtjänst": { "voice": "sv-SE-MattiasNeural", "pitch": "-8%" },
+    "Student": { "voice": "sv-SE-MattiasNeural", "pitch": "-6%", "rate": "+4%" },
+    "Vakten": { "voice": "sv-SE-MattiasNeural", "pitch": "-14%" },
+    "Bandmedlem": { "voice": "sv-SE-MattiasNeural", "pitch": "-9%", "rate": "+6%" }
+  }
+}

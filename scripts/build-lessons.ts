@@ -17,6 +17,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(ROOT, 'lessons');
 const DATA = path.join(ROOT, 'public', 'data');
 const OUT = path.join(ROOT, 'public', 'lessons');
+const AUDIO = path.join(ROOT, 'public', 'audio');
+const audioFile = (lessonId: string, name: string) => (fs.existsSync(path.join(AUDIO, lessonId, `${name}.mp3`)) ? `audio/${lessonId}/${name}.mp3` : undefined);
 const LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 /* word-bank lookup: form → word id (first hit wins, so lower level / higher frequency wins) */
@@ -110,6 +112,7 @@ const summaries: LessonSummary[] = [];
 let linked = 0;
 let total = 0;
 const unlinked = new Map<string, number>();
+const audioLessons: string[] = [];
 
 for (const file of files) {
   const a: Authored = JSON.parse(fs.readFileSync(path.join(SRC, file), 'utf8'));
@@ -121,7 +124,8 @@ for (const file of files) {
     vocabIndex.set(k, k);
     if (!k.includes(' ')) for (const suf of ['en', 'et', 'n', 't', 'ar', 'er', 'or', 'na', 'arna', 'erna', 'orna', 'de', 'r']) vocabIndex.set(k + suf, k);
   }
-  const lines: LessonLine[] = a.lines.map((raw) => {
+  let withAudio = 0;
+  const lines: LessonLine[] = a.lines.map((raw, i) => {
     const [who, sv, en, zh, noteEn, noteZh] = Array.isArray(raw) ? raw : raw.l;
     const tokens = tokenize(sv, new Set(vocabIndex.keys())).map((t) => (t.v ? { ...t, v: vocabIndex.get(t.v) ?? t.v } : t));
     for (const t of tokens) {
@@ -132,15 +136,21 @@ for (const file of files) {
     }
     const line: LessonLine = { who, sv, en, zh, tokens };
     if (noteEn || noteZh) line.note = { en: noteEn ?? '', zh: noteZh ?? '' };
-    if (!Array.isArray(raw) && raw.audio) line.audio = raw.audio;
+    const audio = (!Array.isArray(raw) && raw.audio) || audioFile(a.id, String(i + 1).padStart(2, '0'));
+    if (audio) {
+      line.audio = audio;
+      withAudio++;
+    }
     return line;
   });
-  const lesson: Lesson = { id: a.id, level: a.level, title: a.title, scene: a.scene, vocab, lines, ...(a.series ? { series: a.series } : {}), ...(a.intro ? { intro: a.intro } : {}), ...(a.key ? { key: a.key } : {}) };
+  const lesson: Lesson = { id: a.id, level: a.level, title: a.title, scene: a.scene, vocab, lines, ...(a.series ? { series: a.series } : {}), ...(a.intro ? { intro: { ...a.intro, ...(audioFile(a.id, 'intro') ? { audio: audioFile(a.id, 'intro') } : {}) } } : {}), ...(a.key ? { key: a.key } : {}) };
   fs.writeFileSync(path.join(OUT, `${a.id}.json`), JSON.stringify(lesson));
+  if (withAudio) audioLessons.push(`${a.id} (${withAudio}/${lines.length})`);
   summaries.push({ id: a.id, level: a.level, title: a.title, ...(a.series ? { series: a.series } : {}), lines: lines.length, wordIds: [...new Set(lines.flatMap((l) => l.tokens.map((t) => t.id).filter((x): x is number => x !== undefined)))] });
 }
 fs.writeFileSync(path.join(OUT, 'index.json'), JSON.stringify(summaries));
 
 const top = [...unlinked.entries()].sort((a, b) => b[1] - a[1]).slice(0, 40);
 console.log(`Lessons: ${files.length} | words linked to the word bank or lesson glossary: ${linked}/${total} (${Math.round((100 * linked) / total)}%)`);
+console.log(`Lessons with pre-generated audio: ${audioLessons.length ? audioLessons.join(', ') : 'none (browser voice will be used)'}`);
 console.log(`Most frequent unlinked words (names and numbers are expected): ${top.map(([w, n]) => `${w}×${n}`).join(', ')}`);
