@@ -1,0 +1,46 @@
+{
+  "id": "s1e06-spellistan",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 6: Spellistan", "en": "Episode 6: The playlist", "zh": "第六集：歌单" },
+  "scene": { "en": "Sara comes over for fika. She and Emma disagree about music, and Li gets a crash course in Swedish artists.", "zh": "Sara 来家里 fika。她和 Emma 在音乐上意见不合，Li 上了一堂瑞典音乐速成课。" },
+  "intro": {
+    "sv": "Lördag eftermiddag. Sara har kanelbullar med sig. Emma kokar kaffe. Från högtalaren spelas Saras spellista.",
+    "en": "Saturday afternoon. Sara has brought cinnamon buns. Emma makes coffee. Sara's playlist is playing from the speaker.",
+    "zh": "周六下午。Sara 带了肉桂卷。Emma 煮咖啡。音箱里放着 Sara 的歌单。"
+  },
+  "vocab": [
+    { "sv": "spellista", "en": "playlist", "zh": "歌单" },
+    { "sv": "låt", "en": "song, track", "zh": "歌曲" },
+    { "sv": "band", "en": "band", "zh": "乐队" },
+    { "sv": "text", "en": "lyrics (also: text)", "zh": "歌词（也指文本）" },
+    { "sv": "högtalare", "en": "speaker", "zh": "音箱" },
+    { "sv": "smak", "en": "taste", "zh": "品味；味道" },
+    { "sv": "fastna", "en": "to get stuck (a song in your head)", "zh": "卡住；（歌）在脑子里挥之不去" },
+    { "sv": "lagom", "en": "just right, not too much", "zh": "刚刚好，适度" },
+    { "sv": "nördig", "en": "nerdy", "zh": "宅的，书呆子气的" }
+  ],
+  "key": [1, 4, 8, 12, 17],
+  "lines": [
+    ["Emma", "Vad är det här för musik? Det låter som en tvättmaskin.", "What kind of music is this? It sounds like a washing machine.", "这是什么音乐？听起来像洗衣机。"],
+    ["Sara", "Det är konst, Emma. Du har bara ingen smak.", "It's art, Emma. You just have no taste.", "这是艺术，Emma。你只是没品味。", "“ingen smak” = no taste. “bara” here = just / simply.", "“ingen smak” = 没品味。这里的 “bara” = 只是。"],
+    ["Emma", "Jag har jättebra smak. Jag lyssnar på Veronica Maggio.", "I have excellent taste. I listen to Veronica Maggio.", "我品味很好。我听 Veronica Maggio。"],
+    ["Li", "Vem är det?", "Who is that?", "那是谁？"],
+    ["Sara", "Svensk pop. Alla kan texterna. Man hör henne på varje fest.", "Swedish pop. Everyone knows the lyrics. You hear her at every party.", "瑞典流行乐。所有人都会唱歌词。每个派对都能听到她。", "“kunna texten” = to know the lyrics by heart. “kunna” (can) is also used for knowing something well.", "“kunna texten” = 会背歌词。“kunna”（会）也用于“熟知某事”。"],
+    ["Emma", "Och Håkan Hellström. Om du ska bo i Sverige måste du kunna en Håkan-låt.", "And Håkan Hellström. If you're going to live in Sweden you have to know one Håkan song.", "还有 Håkan Hellström。要在瑞典住，你必须会一首 Håkan 的歌。", "Conditional: “Om du ska …, måste du …” – after the “om” clause the verb comes first.", "条件句：“Om du ska …, måste du …”，om 从句之后主句动词放最前。"],
+    ["Li", "Är det en lag?", "Is that a law?", "这是法律吗？"],
+    ["Sara", "Nästan. Men Håkan är för Göteborg. Vi är i Norrland. Här lyssnar man på hårdrock.", "Almost. But Håkan is for Gothenburg. We're in Norrland. Here people listen to hard rock.", "差不多。但 Håkan 是哥德堡的。我们在北部。这里的人听硬摇滚。", "“Norrland” – the northern half of Sweden, with its own identity and pride.", "“Norrland” = 瑞典北半部，有自己的地方认同感。"],
+    ["Li", "Okej, jag är förvirrad. Kan ni inte bara skicka tre låtar var?", "OK, I'm confused. Can't you just send three songs each?", "好吧，我糊涂了。你们不能各发我三首歌吗？", "“var” at the end = each: tre låtar var, en bulle var.", "句尾的 “var” = 每人：tre låtar var（每人三首歌）、en bulle var（每人一个面包）。"],
+    ["Emma", "Bra idé. En lagom lista.", "Good idea. A reasonable list.", "好主意。一个刚刚好的歌单。", "“lagom” = just the right amount – the famous Swedish word. Not too much, not too little.", "“lagom” = 刚刚好，最出名的瑞典词。不多不少。"],
+    ["Sara", "Lagom är det tråkigaste ordet i svenskan.", "Lagom is the most boring word in Swedish.", "lagom 是瑞典语里最无聊的词。", "Superlative with definite article: “det tråkigaste ordet”.", "最高级加定指：“det tråkigaste ordet”（最无聊的词）。"],
+    ["Li", "Vad lyssnar du på när du pluggar, Sara?", "What do you listen to when you study, Sara?", "Sara，你学习的时候听什么？"],
+    ["Sara", "Ingenting. Jag kan inte plugga med musik. Jag börjar sjunga.", "Nothing. I can't study with music. I start singing.", "什么都不听。我学习不能听音乐。我会开始唱。"],
+    ["Emma", "Det är sant. Hon sjunger i duschen också. Grannarna har klagat.", "That's true. She sings in the shower too. The neighbours have complained.", "真的。她洗澡也唱。邻居都投诉了。", "“klaga” = to complain.", "“klaga” = 抱怨/投诉。"],
+    ["Sara", "En gång!", "Once!", "就一次！"],
+    ["Li", "Den här låten är faktiskt bra. Vad heter den?", "This song is actually good. What's it called?", "这首歌真不错。叫什么？"],
+    ["Sara", "Ser du? Han fattar. Det är ett litet band från Umeå.", "See? He gets it. It's a small band from Umeå.", "看见没？他懂。是一支于默奥的小乐队。", "“fatta” = to get it, to understand (colloquial). “Jag fattar inte” = I don't get it.", "“fatta” = 明白，懂（口语）。“Jag fattar inte” = 我不明白。"],
+    ["Li", "Nu kommer den att fastna i huvudet hela veckan.", "Now it's going to be stuck in my head all week.", "现在它要在我脑子里循环一整周了。", "“fastna i huvudet” = get stuck in one's head.", "“fastna i huvudet” = 在脑子里挥之不去。"],
+    ["Emma", "Välkommen till Saras värld. Vill du ha mer kaffe?", "Welcome to Sara's world. Do you want more coffee?", "欢迎来到 Sara 的世界。还要咖啡吗？"],
+    ["Li", "Ja tack. Och en bulle till. Det här är trevligt.", "Yes please. And another bun. This is nice.", "好的，谢谢。再来一个面包。这样真好。", "“en bulle till” = one more bun. “till” after a noun = another / one more.", "“en bulle till” = 再来一个面包。名词后加 “till” = 再一个。"]
+  ]
+}

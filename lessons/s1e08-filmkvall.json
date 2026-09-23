@@ -1,0 +1,50 @@
+{
+  "id": "s1e08-filmkvall",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 8: Filmkväll", "en": "Episode 8: Movie night", "zh": "第八集：电影之夜" },
+  "scene": { "en": "Emma, Sara, Erik and Li try to choose a film. Nobody agrees. Bosse sits on the remote.", "zh": "Emma、Sara、Erik 和 Li 想选一部电影。谁都不同意谁。Bosse 坐在遥控器上。" },
+  "intro": {
+    "sv": "Söndag kväll i vardagsrummet. Det regnar. Alla fyra sitter i soffan med popcorn, och ingen kan bestämma sig.",
+    "en": "Sunday evening in the living room. It is raining. All four are on the sofa with popcorn, and nobody can decide.",
+    "zh": "周日晚上的客厅。外面下着雨。四个人坐在沙发上吃爆米花，谁也定不下来。"
+  },
+  "vocab": [
+    { "sv": "vardagsrum", "en": "living room", "zh": "客厅" },
+    { "sv": "fjärrkontroll", "en": "remote control", "zh": "遥控器" },
+    { "sv": "bestämma sig", "en": "to make up one's mind", "zh": "拿定主意" },
+    { "sv": "undertext", "en": "subtitles", "zh": "字幕" },
+    { "sv": "skräckfilm", "en": "horror film", "zh": "恐怖片" },
+    { "sv": "rolig", "en": "funny; fun", "zh": "好笑的；有趣的" },
+    { "sv": "spoila", "en": "to spoil (a plot)", "zh": "剧透" },
+    { "sv": "rösta", "en": "to vote", "zh": "投票" },
+    { "sv": "somna", "en": "to fall asleep", "zh": "睡着" },
+    { "sv": "komma överens", "en": "to agree, to get along", "zh": "达成一致；合得来" }
+  ],
+  "key": [3, 6, 10, 14, 19],
+  "lines": [
+    ["Emma", "Okej, vad ska vi se? Jag röstar på något mysigt.", "OK, what shall we watch? I vote for something cosy.", "好，我们看什么？我投给温馨一点的。", "“rösta på” = vote for.", "“rösta på” = 投票给。"],
+    ["Sara", "Skräckfilm. Det regnar, det är perfekt.", "Horror film. It's raining, it's perfect.", "恐怖片。下雨天，太适合了。"],
+    ["Erik", "Nej. Sist såg vi skräck och Emma sov hos mig i tre nätter.", "No. Last time we watched horror and Emma slept at my place for three nights.", "不行。上次看恐怖片，Emma 在我家睡了三晚。", "“sist” = last time. “hos mig” = at my place.", "“sist” = 上次。“hos mig” = 在我家。"],
+    ["Emma", "Det var inte därför! Min värme var trasig.", "That wasn't why! My heating was broken.", "不是因为那个！我家暖气坏了。", "“Det var inte därför” = that wasn't the reason. “trasig” = broken.", "“Det var inte därför” = 不是那个原因。“trasig” = 坏了的。"],
+    ["Li", "Vad tycker ni om en svensk film? Jag vill öva.", "What about a Swedish film? I want to practise.", "看瑞典电影怎么样？我想练习。", "“Vad tycker ni om …?” = what do you think of …?", "“Vad tycker ni om …?” = 你们觉得……怎么样？"],
+    ["Sara", "Med svensk undertext, då. Annars fattar du ingenting. Vi pratar fort.", "With Swedish subtitles, then. Otherwise you won't understand anything. We talk fast.", "那得开瑞典语字幕。不然你什么都听不懂。我们说得快。"],
+    ["Erik", "Det finns en rolig gammal film, Sällskapsresan. Alla svenskar har sett den.", "There's a funny old film, Sällskapsresan. Every Swede has seen it.", "有部好笑的老电影，Sällskapsresan。所有瑞典人都看过。", "“Sällskapsresan” (1980) really is a national classic; people quote it constantly.", "“Sällskapsresan”（1980）确实是国民经典，大家常引用里面的台词。"],
+    ["Emma", "Den är från nittonhundraåttio, Erik.", "It's from nineteen eighty, Erik.", "那是一九八零年的，Erik。"],
+    ["Erik", "Den är tidlös.", "It's timeless.", "它是永恒的。"],
+    ["Li", "Vad handlar den om?", "What is it about?", "讲什么的？", "“handla om” = to be about. Essential for talking about films and books.", "“handla om” = 关于……。聊电影和书必备。"],
+    ["Erik", "En kille åker på charterresa till Kanarieöarna och allt går fel. Den är jätterolig.", "A guy goes on a package holiday to the Canary Islands and everything goes wrong. It's hilarious.", "一个男的去加那利群岛跟团旅游，什么都出岔子。特别好笑。", "“allt går fel” = everything goes wrong.", "“allt går fel” = 一切都出错。"],
+    ["Sara", "Spoila inte slutet!", "Don't spoil the ending!", "别剧透结局！"],
+    ["Erik", "Det finns inget slut att spoila. Han kommer hem.", "There's no ending to spoil. He comes home.", "没什么结局可剧透的。他回家了。"],
+    ["Emma", "Okej, vi röstar. Skräck?", "OK, let's vote. Horror?", "好，投票。恐怖片？"],
+    ["Sara", "Jag.", "Me.", "我。"],
+    ["Emma", "Sällskapsresan?", "Sällskapsresan?", "Sällskapsresan？"],
+    ["Erik", "Jag! Och Li vill öva, så han också.", "Me! And Li wants to practise, so him too.", "我！Li 要练习，所以他也算。"],
+    ["Li", "Det stämmer. Tre mot en.", "That's right. Three to one.", "没错。三比一。", "“tre mot en” = three against one.", "“tre mot en” = 三比一。"],
+    ["Sara", "Ni är tråkiga. Var är fjärrkontrollen?", "You're boring. Where's the remote?", "你们真无聊。遥控器呢？"],
+    ["Emma", "Bosse sitter på den. Igen.", "Bosse is sitting on it. Again.", "Bosse 坐在上面。又一次。"],
+    ["Li", "Jag tror han röstar på skräck.", "I think he votes for horror.", "我觉得他投恐怖片。"],
+    ["Erik", "Han somnar efter tio minuter ändå. Precis som Emma.", "He falls asleep after ten minutes anyway. Just like Emma.", "反正他十分钟就睡着。和 Emma 一样。", "“precis som” = just like.", "“precis som” = 就像……一样。"],
+    ["Emma", "En gång!", "Once!", "就一次！", "Callback to episode 6 – Sara said the same thing about singing in the shower.", "呼应第六集，Sara 说淋浴唱歌时也说了同一句。"]
+  ]
+}

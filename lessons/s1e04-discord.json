@@ -1,0 +1,45 @@
+{
+  "id": "s1e04-discord",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 4: Gruppen", "en": "Episode 4: The group chat", "zh": "第四集：群聊" },
+  "scene": { "en": "Erik adds Li to a Discord server. The group chat moves fast, and Li meets Sara for the first time.", "zh": "Erik 把 Li 拉进 Discord 服务器。群里聊得很快，Li 第一次和 Sara 说上话。" },
+  "intro": {
+    "sv": "Samma kväll. Li sitter i köket med datorn. Bosse sover på tangentbordet. Plötsligt plingar det.",
+    "en": "The same evening. Li is sitting in the kitchen with the laptop. Bosse is asleep on the keyboard. Suddenly there is a ping.",
+    "zh": "当天晚上。Li 坐在厨房里用电脑。Bosse 睡在键盘上。突然叮的一声。"
+  },
+  "vocab": [
+    { "sv": "skriva", "en": "to write, to type (in chat)", "zh": "写，打字" },
+    { "sv": "meddelande", "en": "message", "zh": "消息" },
+    { "sv": "hänga med", "en": "to keep up; to come along", "zh": "跟上；一起来" },
+    { "sv": "spela", "en": "to play (games, music)", "zh": "玩（游戏）、演奏" },
+    { "sv": "ikväll", "en": "tonight", "zh": "今晚" },
+    { "sv": "ha koll på", "en": "to know about, to be on top of", "zh": "了解，掌握" },
+    { "sv": "asså", "en": "“alltså” in speech: well, I mean, like", "zh": "口语的“alltså”：就是说，那个" },
+    { "sv": "typ", "en": "like, sort of (filler)", "zh": "就像，大概（口头语）" }
+  ],
+  "key": [2, 5, 10, 14, 19],
+  "lines": [
+    ["Erik", "Tjena Li! Välkommen till servern. Här är Sara.", "Hey Li! Welcome to the server. This is Sara.", "嘿 Li！欢迎来到服务器。这是 Sara。", "“Tjena” (or “tja”) = hey, very casual greeting between friends.", "“Tjena”（或 “tja”）= 嘿，朋友间很随意的问候。"],
+    ["Sara", "Hejsan! Erik säger att du är bra på att koda.", "Hi there! Erik says you're good at coding.", "你好呀！Erik 说你编程很厉害。"],
+    ["Li", "Hej Sara! Han överdriver. Men jag gör mitt bästa.", "Hi Sara! He exaggerates. But I do my best.", "你好 Sara！他夸张了。不过我尽力。", "“Jag gör mitt bästa” = I do my best.", "“Jag gör mitt bästa” = 我尽力。"],
+    ["Sara", "Bra, för jag hatar att koda. Jag tar matten, ni tar koden. Deal?", "Good, because I hate coding. I'll do the maths, you do the code. Deal?", "很好，因为我讨厌编程。我负责数学，你们负责代码。成交？", "Young Swedes drop English words like “deal” into Swedish all the time.", "瑞典年轻人说话经常夹英语词，比如 “deal”。"],
+    ["Li", "Deal.", "Deal.", "成交。"],
+    ["Erik", "Asså, ni skriver så snabbt. Jag hänger inte med.", "I mean, you type so fast. I can't keep up.", "那个，你们打字太快了。我跟不上。", "“hänga med” = keep up. “Jag hänger inte med” is what you say when a conversation is too fast – learn it!", "“hänga med” = 跟上。“Jag hänger inte med” 是听不上趟时的救命句，一定要记住！"],
+    ["Sara", "Det är inte vårt fel att du är gammal, Erik.", "It's not our fault that you're old, Erik.", "你老了不是我们的错，Erik。", "“Det är inte vårt fel att …” = it's not our fault that …", "“Det är inte vårt fel att …” = 不是我们的错……"],
+    ["Erik", "Jag är tjugotre!", "I'm twenty-three!", "我才二十三！"],
+    ["Li", "Vad gör ni ikväll?", "What are you doing tonight?", "你们今晚做什么？"],
+    ["Erik", "Jag ska spela lite CS med några polare. Vill du hänga med?", "I'm going to play some CS with some mates. Do you want to join?", "我要和几个哥们打会儿 CS。你要一起吗？", "“polare” = mate, buddy (slang). “hänga med” here = come along / join.", "“polare” = 哥们（俚语）。这里的 “hänga med” = 一起来。"],
+    ["Li", "Gärna, men jag är ganska dålig.", "Sure, but I'm pretty bad.", "好啊，不过我打得挺差的。", "“ganska” = quite, pretty.", "“ganska” = 相当，挺。"],
+    ["Erik", "Det är alla i den här gruppen. Det är typ poängen.", "Everyone in this group is. That's sort of the point.", "这群里的人都差。这大概就是重点。", "“typ” is a filler = like / sort of. Very common in speech, avoid in writing.", "“typ” 是口头语 = 大概/就像。口语里非常常见，书面语要避免。"],
+    ["Sara", "Jag spelar inte. Jag ska på konsert. En liten klubb i stan.", "I'm not playing. I'm going to a concert. A small club in town.", "我不玩。我要去看演出。市里一个小俱乐部。", "“Jag ska på konsert” – “gå” is often left out after “ska”: jag ska på bio, jag ska hem.", "“Jag ska på konsert” 在 “ska” 后常省略 “gå”：jag ska på bio（去看电影）、jag ska hem（回家）。"],
+    ["Li", "Vad för musik?", "What kind of music?", "什么类型的音乐？", "“Vad för …?” = what kind of …?", "“Vad för …?” = 什么样的……？"],
+    ["Sara", "Indie, lite postpunk. Du skulle nog gilla det. Nästa gång följer du med.", "Indie, a bit of post-punk. You'd probably like it. Next time you're coming along.", "独立音乐，有点后朋克。你应该会喜欢。下次你跟我一起去。", "“Du skulle nog gilla det” = you'd probably like it. “gilla” = to like (also “like” on social media).", "“Du skulle nog gilla det” = 你应该会喜欢。“gilla” = 喜欢（也指社交媒体的点赞）。"],
+    ["Li", "Okej! Jag har inte så bra koll på svensk musik.", "OK! I don't know much about Swedish music.", "好！我对瑞典音乐不太了解。", "“ha koll på” = know about / be on top of. “Jag har inte koll” = I have no idea.", "“ha koll på” = 了解/掌握。“Jag har inte koll” = 我不清楚。"],
+    ["Sara", "Det fixar vi. Jag skickar en spellista.", "We'll fix that. I'll send you a playlist.", "这个好办。我发你一个歌单。", "“Det fixar vi” = we'll sort that out.", "“Det fixar vi” = 这个我们搞定。"],
+    ["Erik", "Skicka inte din spellista till honom, Sara. Han har precis kommit hit. Han ska trivas.", "Don't send him your playlist, Sara. He's just arrived. He's supposed to enjoy himself.", "别把你的歌单发给他，Sara。他刚来。他得过得开心。", "“trivas” = to be happy / comfortable somewhere. A key Swedish verb: “Trivs du i Sverige?”", "“trivas” = 在某处过得舒心。关键动词：“Trivs du i Sverige?”（你在瑞典过得好吗？）"],
+    ["Sara", "Min spellista är bättre än ditt spel.", "My playlist is better than your gaming.", "我的歌单比你的游戏水平强。"],
+    ["Li", "Jag lyssnar på båda. Vi hörs ikväll!", "I'll listen to both. Talk tonight!", "两个我都听。今晚聊！", "“Vi hörs” = we'll be in touch / talk later (literally “we hear each other”). The chat/phone version of “vi ses”.", "“Vi hörs” = 回头联系（字面“我们互相听到”）。是聊天/电话版的 “vi ses”。"]
+  ]
+}

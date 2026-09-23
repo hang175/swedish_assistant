@@ -1,24 +1,111 @@
 {
   "id": "02-kafeet",
   "level": "A1",
-  "title": { "sv": "På kaféet", "en": "At the café", "zh": "在咖啡馆" },
-  "scene": { "en": "Li orders a coffee and a cinnamon bun.", "zh": "Li 点一杯咖啡和一个肉桂卷。" },
+  "series": "Basics",
+  "title": {
+    "sv": "På kaféet",
+    "en": "At the café",
+    "zh": "在咖啡馆"
+  },
+  "scene": {
+    "en": "Li orders a coffee and a cinnamon bun.",
+    "zh": "Li 点一杯咖啡和一个肉桂卷。"
+  },
   "vocab": [
-    { "sv": "kanelbulle", "en": "cinnamon bun", "zh": "肉桂卷" },
-    { "sv": "Swish", "en": "Swedish mobile payment app", "zh": "瑞典手机支付应用" },
-    { "sv": "det är bra så", "en": "that's all, thanks", "zh": "这样就好（不用别的了）" }
+    {
+      "sv": "kanelbulle",
+      "en": "cinnamon bun",
+      "zh": "肉桂卷"
+    },
+    {
+      "sv": "Swish",
+      "en": "Swedish mobile payment app",
+      "zh": "瑞典手机支付应用"
+    },
+    {
+      "sv": "det är bra så",
+      "en": "that's all, thanks",
+      "zh": "这样就好（不用别的了）"
+    }
   ],
   "lines": [
-    ["Barista", "Hej! Vad vill du ha?", "Hi! What would you like?", "你好！你想要什么？", "“Vad vill du ha?” is what you will hear in every café and shop.", "“Vad vill du ha?” 在所有咖啡馆和商店都会听到。"],
-    ["Li", "Hej! En kaffe, tack.", "Hi! A coffee, please.", "你好！一杯咖啡，谢谢。", "Swedish has no word for “please”; you add “tack” (thanks) at the end instead.", "瑞典语没有“请”这个词，用句尾的“tack”代替。"],
-    ["Barista", "Vill du ha en stor eller en liten?", "Would you like a large or a small one?", "你要大杯还是小杯？"],
-    ["Li", "En stor, tack. Och en kanelbulle.", "A large one, please. And a cinnamon bun.", "大杯，谢谢。再来一个肉桂卷。"],
-    ["Barista", "Något mer?", "Anything else?", "还要别的吗？"],
-    ["Li", "Nej tack, det är bra så.", "No thanks, that's all.", "不用了，谢谢，这样就好。", "Set phrase – memorise it whole.", "固定说法，整句记住。"],
-    ["Barista", "Det blir sextiofem kronor. Kort eller Swish?", "That'll be sixty-five kronor. Card or Swish?", "一共 65 克朗。刷卡还是 Swish？", "“Det blir …” (“it becomes …”) is how prices are announced.", "“Det blir …”（“变成……”）是报价格的固定说法。"],
-    ["Li", "Kort, tack. Var är mjölken?", "Card, please. Where is the milk?", "刷卡，谢谢。牛奶在哪里？"],
-    ["Barista", "Den står där borta, vid fönstret.", "It's over there, by the window.", "在那边，窗户旁边。", "Things that stand upright “står”; “där borta” = over there.", "立着放的东西用“står”；“där borta” = 那边。"],
-    ["Li", "Tack så mycket!", "Thank you very much!", "非常感谢！"],
-    ["Barista", "Varsågod. Ha en bra dag!", "You're welcome. Have a nice day!", "不客气。祝你今天愉快！", "“Varsågod” is both “here you are” and “you're welcome”.", "“Varsågod” 既是“给你”，也是“不客气”。"]
+    [
+      "Barista",
+      "Hej! Vad vill du ha?",
+      "Hi! What would you like?",
+      "你好！你想要什么？",
+      "“Vad vill du ha?” is what you will hear in every café and shop.",
+      "“Vad vill du ha?” 在所有咖啡馆和商店都会听到。"
+    ],
+    [
+      "Li",
+      "Hej! En kaffe, tack.",
+      "Hi! A coffee, please.",
+      "你好！一杯咖啡，谢谢。",
+      "Swedish has no word for “please”; you add “tack” (thanks) at the end instead.",
+      "瑞典语没有“请”这个词，用句尾的“tack”代替。"
+    ],
+    [
+      "Barista",
+      "Vill du ha en stor eller en liten?",
+      "Would you like a large or a small one?",
+      "你要大杯还是小杯？"
+    ],
+    [
+      "Li",
+      "En stor, tack. Och en kanelbulle.",
+      "A large one, please. And a cinnamon bun.",
+      "大杯，谢谢。再来一个肉桂卷。"
+    ],
+    [
+      "Barista",
+      "Något mer?",
+      "Anything else?",
+      "还要别的吗？"
+    ],
+    [
+      "Li",
+      "Nej tack, det är bra så.",
+      "No thanks, that's all.",
+      "不用了，谢谢，这样就好。",
+      "Set phrase – memorise it whole.",
+      "固定说法，整句记住。"
+    ],
+    [
+      "Barista",
+      "Det blir sextiofem kronor. Kort eller Swish?",
+      "That'll be sixty-five kronor. Card or Swish?",
+      "一共 65 克朗。刷卡还是 Swish？",
+      "“Det blir …” (“it becomes …”) is how prices are announced.",
+      "“Det blir …”（“变成……”）是报价格的固定说法。"
+    ],
+    [
+      "Li",
+      "Kort, tack. Var är mjölken?",
+      "Card, please. Where is the milk?",
+      "刷卡，谢谢。牛奶在哪里？"
+    ],
+    [
+      "Barista",
+      "Den står där borta, vid fönstret.",
+      "It's over there, by the window.",
+      "在那边，窗户旁边。",
+      "Things that stand upright “står”; “där borta” = over there.",
+      "立着放的东西用“står”；“där borta” = 那边。"
+    ],
+    [
+      "Li",
+      "Tack så mycket!",
+      "Thank you very much!",
+      "非常感谢！"
+    ],
+    [
+      "Barista",
+      "Varsågod. Ha en bra dag!",
+      "You're welcome. Have a nice day!",
+      "不客气。祝你今天愉快！",
+      "“Varsågod” is both “here you are” and “you're welcome”.",
+      "“Varsågod” 既是“给你”，也是“不客气”。"
+    ]
   ]
 }

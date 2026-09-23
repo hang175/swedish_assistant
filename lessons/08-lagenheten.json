@@ -1,26 +1,119 @@
 {
   "id": "08-lagenheten",
   "level": "A1",
-  "title": { "sv": "Lägenheten på Storgatan", "en": "The flat on Storgatan", "zh": "大街上的那套公寓" },
-  "scene": { "en": "Li phones a landlord about a flat for rent.", "zh": "Li 给房东打电话询问出租的公寓。" },
+  "series": "Basics",
+  "title": {
+    "sv": "Lägenheten på Storgatan",
+    "en": "The flat on Storgatan",
+    "zh": "大街上的那套公寓"
+  },
+  "scene": {
+    "en": "Li phones a landlord about a flat for rent.",
+    "zh": "Li 给房东打电话询问出租的公寓。"
+  },
   "vocab": [
-    { "sv": "hyresvärd", "en": "landlord", "zh": "房东" },
-    { "sv": "ledig", "en": "free, available", "zh": "空着的，可用的" },
-    { "sv": "två rum och kök", "en": "two rooms and a kitchen (how flats are described)", "zh": "两室一厨（瑞典描述房型的方式）" },
-    { "sv": "kvadratmeter", "en": "square metre", "zh": "平方米" },
-    { "sv": "ingå", "en": "to be included", "zh": "包含在内" }
+    {
+      "sv": "hyresvärd",
+      "en": "landlord",
+      "zh": "房东"
+    },
+    {
+      "sv": "ledig",
+      "en": "free, available",
+      "zh": "空着的，可用的"
+    },
+    {
+      "sv": "två rum och kök",
+      "en": "two rooms and a kitchen (how flats are described)",
+      "zh": "两室一厨（瑞典描述房型的方式）"
+    },
+    {
+      "sv": "kvadratmeter",
+      "en": "square metre",
+      "zh": "平方米"
+    },
+    {
+      "sv": "ingå",
+      "en": "to be included",
+      "zh": "包含在内"
+    }
   ],
   "lines": [
-    ["Li", "Hej, jag ringer om lägenheten på Storgatan. Är den fortfarande ledig?", "Hi, I'm calling about the flat on Storgatan. Is it still available?", "你好，我打电话是想问大街上那套公寓。还空着吗？", "“Jag ringer om …” = I'm calling about … – the standard phone opener.", "“Jag ringer om …” = 我打电话是关于……，电话开场的固定说法。"],
-    ["Hyresvärd", "Ja, det är den. Vill du komma och titta?", "Yes, it is. Would you like to come and have a look?", "还空着。你想来看看吗？", "Short answer pattern: “Ja, det är den” – yes, it is.", "简短回答模式：“Ja, det är den” = 是的。"],
-    ["Li", "Gärna. När passar det?", "Gladly. When would suit you?", "好的。什么时候方便？", "“Passar det?” = does it suit / is it OK? Used constantly when making plans.", "“Passar det?” = 合适吗/方便吗？约时间时非常常用。"],
-    ["Hyresvärd", "Passar det imorgon klockan fem?", "Does tomorrow at five work?", "明天五点可以吗？"],
-    ["Li", "Det passar bra. Hur stor är lägenheten?", "That works well. How big is the flat?", "可以。公寓有多大？"],
-    ["Hyresvärd", "Den är två rum och kök, femtiofem kvadratmeter.", "It's two rooms and a kitchen, fifty-five square metres.", "两室一厨，55 平方米。"],
-    ["Li", "Vad kostar den i månaden?", "How much is it per month?", "每个月多少钱？", "“I månaden” = per month; “i veckan” = per week; “om dagen” = per day.", "“i månaden” = 每月；“i veckan” = 每周；“om dagen” = 每天。"],
-    ["Hyresvärd", "Sjutusenfemhundra kronor, och värme ingår.", "Seven thousand five hundred kronor, and heating is included.", "7500 克朗，包含暖气。"],
-    ["Li", "Är det nära en busshållplats?", "Is it near a bus stop?", "离公交站近吗？"],
-    ["Hyresvärd", "Ja, det tar två minuter att gå.", "Yes, it takes two minutes to walk.", "近，走路两分钟。"],
-    ["Li", "Bra. Då ses vi imorgon!", "Good. See you tomorrow then!", "好。那明天见！", "“Då ses vi” – then we'll see each other. “Då” first, so the verb comes before “vi”.", "“Då ses vi” = 那我们到时候见。“då”放句首，动词就要放在“vi”前面。"]
+    [
+      "Li",
+      "Hej, jag ringer om lägenheten på Storgatan. Är den fortfarande ledig?",
+      "Hi, I'm calling about the flat on Storgatan. Is it still available?",
+      "你好，我打电话是想问大街上那套公寓。还空着吗？",
+      "“Jag ringer om …” = I'm calling about … – the standard phone opener.",
+      "“Jag ringer om …” = 我打电话是关于……，电话开场的固定说法。"
+    ],
+    [
+      "Hyresvärd",
+      "Ja, det är den. Vill du komma och titta?",
+      "Yes, it is. Would you like to come and have a look?",
+      "还空着。你想来看看吗？",
+      "Short answer pattern: “Ja, det är den” – yes, it is.",
+      "简短回答模式：“Ja, det är den” = 是的。"
+    ],
+    [
+      "Li",
+      "Gärna. När passar det?",
+      "Gladly. When would suit you?",
+      "好的。什么时候方便？",
+      "“Passar det?” = does it suit / is it OK? Used constantly when making plans.",
+      "“Passar det?” = 合适吗/方便吗？约时间时非常常用。"
+    ],
+    [
+      "Hyresvärd",
+      "Passar det imorgon klockan fem?",
+      "Does tomorrow at five work?",
+      "明天五点可以吗？"
+    ],
+    [
+      "Li",
+      "Det passar bra. Hur stor är lägenheten?",
+      "That works well. How big is the flat?",
+      "可以。公寓有多大？"
+    ],
+    [
+      "Hyresvärd",
+      "Den är två rum och kök, femtiofem kvadratmeter.",
+      "It's two rooms and a kitchen, fifty-five square metres.",
+      "两室一厨，55 平方米。"
+    ],
+    [
+      "Li",
+      "Vad kostar den i månaden?",
+      "How much is it per month?",
+      "每个月多少钱？",
+      "“I månaden” = per month; “i veckan” = per week; “om dagen” = per day.",
+      "“i månaden” = 每月；“i veckan” = 每周；“om dagen” = 每天。"
+    ],
+    [
+      "Hyresvärd",
+      "Sjutusenfemhundra kronor, och värme ingår.",
+      "Seven thousand five hundred kronor, and heating is included.",
+      "7500 克朗，包含暖气。"
+    ],
+    [
+      "Li",
+      "Är det nära en busshållplats?",
+      "Is it near a bus stop?",
+      "离公交站近吗？"
+    ],
+    [
+      "Hyresvärd",
+      "Ja, det tar två minuter att gå.",
+      "Yes, it takes two minutes to walk.",
+      "近，走路两分钟。"
+    ],
+    [
+      "Li",
+      "Bra. Då ses vi imorgon!",
+      "Good. See you tomorrow then!",
+      "好。那明天见！",
+      "“Då ses vi” – then we'll see each other. “Då” first, so the verb comes before “vi”.",
+      "“Då ses vi” = 那我们到时候见。“då”放句首，动词就要放在“vi”前面。"
+    ]
   ]
 }

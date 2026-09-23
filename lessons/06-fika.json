@@ -1,25 +1,114 @@
 {
   "id": "06-fika",
   "level": "A1",
-  "title": { "sv": "Fika på jobbet", "en": "Coffee break at work", "zh": "上班时的 fika" },
-  "scene": { "en": "Erik, a colleague, invites Li for a coffee break and they chat about the weekend.", "zh": "同事 Erik 叫 Li 一起喝咖啡，两人聊周末。" },
+  "series": "Basics",
+  "title": {
+    "sv": "Fika på jobbet",
+    "en": "Coffee break at work",
+    "zh": "上班时的 fika"
+  },
+  "scene": {
+    "en": "Erik, a colleague, invites Li for a coffee break and they chat about the weekend.",
+    "zh": "同事 Erik 叫 Li 一起喝咖啡，两人聊周末。"
+  },
   "vocab": [
-    { "sv": "fika", "en": "coffee break with something to eat (a Swedish institution)", "zh": "喝咖啡吃点心的休息时间（瑞典特色）" },
-    { "sv": "stuga", "en": "cottage, cabin", "zh": "小木屋" },
-    { "sv": "svärmor", "en": "mother-in-law", "zh": "岳母 / 婆婆" },
-    { "sv": "detsamma", "en": "the same to you", "zh": "你也是" }
+    {
+      "sv": "fika",
+      "en": "coffee break with something to eat (a Swedish institution)",
+      "zh": "喝咖啡吃点心的休息时间（瑞典特色）"
+    },
+    {
+      "sv": "stuga",
+      "en": "cottage, cabin",
+      "zh": "小木屋"
+    },
+    {
+      "sv": "svärmor",
+      "en": "mother-in-law",
+      "zh": "岳母 / 婆婆"
+    },
+    {
+      "sv": "detsamma",
+      "en": "the same to you",
+      "zh": "你也是"
+    }
   ],
   "lines": [
-    ["Erik", "Ska vi ta en fika?", "Shall we have a fika?", "我们去 fika 一下？", "“Ska vi …?” = shall we …? The standard way to suggest something.", "“Ska vi …?” = 我们……好吗？提议的标准句式。"],
-    ["Li", "Ja, gärna! Jag behöver en paus.", "Yes, gladly! I need a break.", "好啊！我需要休息一下。"],
-    ["Erik", "Hur går det med projektet?", "How is the project going?", "项目进展怎么样？", "“Hur går det med …?” – how is it going with …? Works for anything.", "“Hur går det med …?” 问任何事情的进展都可以用。"],
-    ["Li", "Det går bra, men jag har mycket att göra.", "It's going well, but I have a lot to do.", "挺顺利的，但我有很多事要做。"],
-    ["Erik", "Jag förstår. Vad gör du i helgen?", "I see. What are you doing at the weekend?", "明白。你周末做什么？", "Present tense for the future: “Vad gör du i helgen?”", "用现在时表示将来：“Vad gör du i helgen?”"],
-    ["Li", "Jag ska nog bara vila. Och du?", "I'll probably just rest. And you?", "我大概就休息一下。你呢？", "“Nog” softens a statement – probably, I suppose.", "“nog” 让语气变缓和，相当于“大概、可能”。"],
-    ["Erik", "Vi ska åka till stugan om vädret är fint.", "We're going to the cottage if the weather is nice.", "如果天气好，我们打算去小木屋。"],
-    ["Li", "Vad mysigt! Har ni en stuga?", "How cosy! Do you have a cottage?", "真惬意！你们有小木屋？", "“Mysigt” – cosy – is one of the most Swedish words there is.", "“mysigt”（惬意、温馨）是最有瑞典味的词之一。"],
-    ["Erik", "Ja, min svärmor har en vid sjön.", "Yes, my mother-in-law has one by the lake.", "有，我岳母在湖边有一栋。"],
-    ["Li", "Trevlig helg då!", "Have a nice weekend then!", "那祝你周末愉快！"],
-    ["Erik", "Detsamma!", "Same to you!", "你也是！"]
+    [
+      "Erik",
+      "Ska vi ta en fika?",
+      "Shall we have a fika?",
+      "我们去 fika 一下？",
+      "“Ska vi …?” = shall we …? The standard way to suggest something.",
+      "“Ska vi …?” = 我们……好吗？提议的标准句式。"
+    ],
+    [
+      "Li",
+      "Ja, gärna! Jag behöver en paus.",
+      "Yes, gladly! I need a break.",
+      "好啊！我需要休息一下。"
+    ],
+    [
+      "Erik",
+      "Hur går det med projektet?",
+      "How is the project going?",
+      "项目进展怎么样？",
+      "“Hur går det med …?” – how is it going with …? Works for anything.",
+      "“Hur går det med …?” 问任何事情的进展都可以用。"
+    ],
+    [
+      "Li",
+      "Det går bra, men jag har mycket att göra.",
+      "It's going well, but I have a lot to do.",
+      "挺顺利的，但我有很多事要做。"
+    ],
+    [
+      "Erik",
+      "Jag förstår. Vad gör du i helgen?",
+      "I see. What are you doing at the weekend?",
+      "明白。你周末做什么？",
+      "Present tense for the future: “Vad gör du i helgen?”",
+      "用现在时表示将来：“Vad gör du i helgen?”"
+    ],
+    [
+      "Li",
+      "Jag ska nog bara vila. Och du?",
+      "I'll probably just rest. And you?",
+      "我大概就休息一下。你呢？",
+      "“Nog” softens a statement – probably, I suppose.",
+      "“nog” 让语气变缓和，相当于“大概、可能”。"
+    ],
+    [
+      "Erik",
+      "Vi ska åka till stugan om vädret är fint.",
+      "We're going to the cottage if the weather is nice.",
+      "如果天气好，我们打算去小木屋。"
+    ],
+    [
+      "Li",
+      "Vad mysigt! Har ni en stuga?",
+      "How cosy! Do you have a cottage?",
+      "真惬意！你们有小木屋？",
+      "“Mysigt” – cosy – is one of the most Swedish words there is.",
+      "“mysigt”（惬意、温馨）是最有瑞典味的词之一。"
+    ],
+    [
+      "Erik",
+      "Ja, min svärmor har en vid sjön.",
+      "Yes, my mother-in-law has one by the lake.",
+      "有，我岳母在湖边有一栋。"
+    ],
+    [
+      "Li",
+      "Trevlig helg då!",
+      "Have a nice weekend then!",
+      "那祝你周末愉快！"
+    ],
+    [
+      "Erik",
+      "Detsamma!",
+      "Same to you!",
+      "你也是！"
+    ]
   ]
 }

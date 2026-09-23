@@ -40,25 +40,40 @@ function LessonList() {
         </div>
       </div>
       <VoiceNotice />
-      <div className="lessonlist">
-        {list.map((l, i) => {
-          const p = lessons?.[l.id];
-          const known = l.wordIds.filter((w) => statusOf(cards[w]) !== 'new').length;
-          return (
-            <a className={`card lessoncard ${p?.d ? 'done' : ''}`} href={`#/lessons/${l.id}`} key={l.id}>
-              <div className="num">{i + 1}</div>
-              <div className="body">
-                <b lang="sv">{l.title.sv}</b>
-                <div className="muted">{zh && settings.lessonLang === 'zh' ? l.title.zh : l.title.en}{settings.lessonLang === 'both' ? ` · ${l.title.zh}` : ''}</div>
-                <div className="muted small">
-                  <span className={`lv lv-${l.level}`}>{l.level}</span> {l.lines} lines · {known}/{l.wordIds.length} words already in your study · {p ? `played ${p.p}×` : 'not started'}
-                </div>
-              </div>
-              {p?.d && <span className="check" title="Completed">✓</span>}
-            </a>
-          );
-        })}
-      </div>
+      {[...new Set(list.map((l) => l.series ?? 'Lessons'))].map((series) => (
+        <div key={series}>
+          <h2 className="serieshead">{series}</h2>
+          <div className="lessonlist">
+            {list
+              .filter((l) => (l.series ?? 'Lessons') === series)
+              .map((l, i) => {
+                const p = lessons?.[l.id];
+                const known = l.wordIds.filter((w) => statusOf(cards[w]) !== 'new').length;
+                return (
+                  <a className={`card lessoncard ${p?.d ? 'done' : ''}`} href={`#/lessons/${l.id}`} key={l.id}>
+                    <div className="num">{i + 1}</div>
+                    <div className="body">
+                      <b lang="sv">{l.title.sv}</b>
+                      <div className="muted">
+                        {zh && settings.lessonLang === 'zh' ? l.title.zh : l.title.en}
+                        {settings.lessonLang === 'both' ? ` · ${l.title.zh}` : ''}
+                      </div>
+                      <div className="muted small">
+                        <span className={`lv lv-${l.level}`}>{l.level}</span> {l.lines} lines · {known}/{l.wordIds.length} words already in your study ·{' '}
+                        {p ? `played ${p.p}×` : 'not started'}
+                      </div>
+                    </div>
+                    {p?.d && (
+                      <span className="check" title="Completed">
+                        ✓
+                      </span>
+                    )}
+                  </a>
+                );
+              })}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
@@ -102,22 +117,24 @@ function LessonView({ id }: { id: string }) {
   );
 
   const playFrom = useCallback(
-    async (start: number) => {
+    async (start: number, only?: number[]) => {
       if (!lesson) return;
       const token = ++run.current;
       setPlaying(true);
-      let i = start;
+      const order = only ?? lesson.lines.map((_, i) => i);
+      let from = Math.max(0, order.indexOf(start));
       for (;;) {
-        for (; i < lesson.lines.length; i++) {
+        for (let k = from; k < order.length; k++) {
+          const i = order[k];
           if (run.current !== token) return;
           setCurrent(i);
           await playLine(lesson.lines[i], speed);
           if (run.current !== token) return;
-          await new Promise((r) => setTimeout(r, 650));
+          await new Promise((r) => setTimeout(r, only ? 1400 : 650));
         }
-        updateLesson(id, { p: (lessons?.[id]?.p ?? 0) + 1 });
-        if (!loop) break;
-        i = 0;
+        if (!only) updateLesson(id, { p: (lessons?.[id]?.p ?? 0) + 1 });
+        if (!loop && !only) break;
+        from = 0;
       }
       setPlaying(false);
       setCurrent(null);
@@ -185,6 +202,19 @@ function LessonView({ id }: { id: string }) {
       <h1 lang="sv">{lesson.title.sv}</h1>
       <p className="muted">{tr(lesson.title)}</p>
       <p className="scene">{tr(lesson.scene)}</p>
+      {lesson.intro && (
+        <div className="card intro">
+          <div className="row">
+            <SpeakButton text={lesson.intro.sv} label="Play narration" />
+            <div>
+              <div className="sv" lang="sv">
+                {lesson.intro.sv}
+              </div>
+              <div className="en">{tr(lesson.intro)}</div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="card player">
         <div className="row wrap">
@@ -249,6 +279,26 @@ function LessonView({ id }: { id: string }) {
           );
         })}
       </div>
+
+      {lesson.key && lesson.key.length > 0 && (
+        <div className="card keylines">
+          <div className="row between wrap">
+            <h2>Key sentences – learn these by heart</h2>
+            <button onClick={() => (playing ? stop() : void playFrom(lesson.key![0], lesson.key))}>{playing ? '■ Stop' : '↻ Loop key sentences'}</button>
+          </div>
+          {lesson.key.map((i) => (
+            <div className={`example ${current === i ? 'current' : ''}`} key={i}>
+              <SpeakButton text={lesson.lines[i].sv} label="Play" />
+              <div>
+                <div className="sv" lang="sv">
+                  {lesson.lines[i].sv}
+                </div>
+                <div className="en">{tr(lesson.lines[i])}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       {lesson.vocab.length > 0 && (
         <div className="card">

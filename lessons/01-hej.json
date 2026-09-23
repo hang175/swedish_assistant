@@ -1,26 +1,108 @@
 {
   "id": "01-hej",
   "level": "A1",
-  "title": { "sv": "Hej! Vad heter du?", "en": "Hello! What's your name?", "zh": "你好！你叫什么名字？" },
+  "series": "Basics",
+  "title": {
+    "sv": "Hej! Vad heter du?",
+    "en": "Hello! What's your name?",
+    "zh": "你好！你叫什么名字？"
+  },
   "scene": {
     "en": "Li has just moved to Sweden and meets Anna at a language café.",
     "zh": "Li 刚搬到瑞典，在语言咖啡馆里认识了 Anna。"
   },
   "vocab": [
-    { "sv": "träffas", "en": "to meet (each other)", "zh": "见面" },
-    { "sv": "lite grann", "en": "a little bit", "zh": "一点点" }
+    {
+      "sv": "träffas",
+      "en": "to meet (each other)",
+      "zh": "见面"
+    },
+    {
+      "sv": "lite grann",
+      "en": "a little bit",
+      "zh": "一点点"
+    }
   ],
   "lines": [
-    ["Anna", "Hej! Jag heter Anna. Vad heter du?", "Hi! My name is Anna. What's your name?", "你好！我叫 Anna。你叫什么？", "“Jag heter …” is the normal way to give your name – literally “I am called …”.", "“Jag heter …” 是最常用的自我介绍说法，字面意思是“我被叫作……”。"],
-    ["Li", "Hej Anna! Jag heter Li. Trevligt att träffas.", "Hi Anna! I'm Li. Nice to meet you.", "你好 Anna！我叫 Li。很高兴认识你。"],
-    ["Anna", "Trevligt att träffas! Var kommer du ifrån?", "Nice to meet you! Where are you from?", "很高兴认识你！你从哪里来？", "“Var … ifrån?” – the preposition goes to the end, like English “where … from”.", "“Var … ifrån?” 介词放在句尾，和英语 where…from 一样。"],
-    ["Li", "Jag kommer från Kina. Jag bor i Sundsvall nu.", "I'm from China. I live in Sundsvall now.", "我来自中国。我现在住在松兹瓦尔。"],
-    ["Anna", "Vad kul! Hur länge har du bott här?", "How nice! How long have you lived here?", "太好了！你在这里住了多久？", "“Vad kul!” is an everyday reaction meaning “how fun / how nice”.", "“Vad kul!” 是日常口语里的“真好/真有意思”。"],
-    ["Li", "I två år. Jag pluggar på universitetet.", "For two years. I study at the university.", "两年了。我在大学读书。", "“Plugga” is the everyday word for studying; “studera” is more formal.", "“plugga” 是口语里的“学习/读书”，“studera” 更正式。"],
-    ["Anna", "Talar du svenska?", "Do you speak Swedish?", "你会说瑞典语吗？", "A yes/no question simply starts with the verb – no “do”.", "一般疑问句直接把动词放句首，不需要“do”。"],
-    ["Li", "Lite grann. Jag lär mig. Kan du prata långsammare?", "A little. I'm learning. Can you speak more slowly?", "一点点。我在学。你能说慢一点吗？", "“Lära sig” = to learn (literally “teach oneself”). The most useful sentence for a beginner is the last one.", "“lära sig” 是“学会”，字面是“教自己”。最后一句是初学者最有用的话。"],
-    ["Anna", "Självklart! Du pratar redan bra.", "Of course! You already speak well.", "当然！你已经说得很好了。"],
-    ["Li", "Tack! Vi ses!", "Thanks! See you!", "谢谢！回头见！", "“Vi ses” – literally “we see each other” – is the normal casual goodbye.", "“Vi ses” 字面是“我们互相见”，是最常用的随意告别。"],
-    ["Anna", "Hej då!", "Bye!", "再见！"]
+    [
+      "Anna",
+      "Hej! Jag heter Anna. Vad heter du?",
+      "Hi! My name is Anna. What's your name?",
+      "你好！我叫 Anna。你叫什么？",
+      "“Jag heter …” is the normal way to give your name – literally “I am called …”.",
+      "“Jag heter …” 是最常用的自我介绍说法，字面意思是“我被叫作……”。"
+    ],
+    [
+      "Li",
+      "Hej Anna! Jag heter Li. Trevligt att träffas.",
+      "Hi Anna! I'm Li. Nice to meet you.",
+      "你好 Anna！我叫 Li。很高兴认识你。"
+    ],
+    [
+      "Anna",
+      "Trevligt att träffas! Var kommer du ifrån?",
+      "Nice to meet you! Where are you from?",
+      "很高兴认识你！你从哪里来？",
+      "“Var … ifrån?” – the preposition goes to the end, like English “where … from”.",
+      "“Var … ifrån?” 介词放在句尾，和英语 where…from 一样。"
+    ],
+    [
+      "Li",
+      "Jag kommer från Kina. Jag bor i Sundsvall nu.",
+      "I'm from China. I live in Sundsvall now.",
+      "我来自中国。我现在住在松兹瓦尔。"
+    ],
+    [
+      "Anna",
+      "Vad kul! Hur länge har du bott här?",
+      "How nice! How long have you lived here?",
+      "太好了！你在这里住了多久？",
+      "“Vad kul!” is an everyday reaction meaning “how fun / how nice”.",
+      "“Vad kul!” 是日常口语里的“真好/真有意思”。"
+    ],
+    [
+      "Li",
+      "I två år. Jag pluggar på universitetet.",
+      "For two years. I study at the university.",
+      "两年了。我在大学读书。",
+      "“Plugga” is the everyday word for studying; “studera” is more formal.",
+      "“plugga” 是口语里的“学习/读书”，“studera” 更正式。"
+    ],
+    [
+      "Anna",
+      "Talar du svenska?",
+      "Do you speak Swedish?",
+      "你会说瑞典语吗？",
+      "A yes/no question simply starts with the verb – no “do”.",
+      "一般疑问句直接把动词放句首，不需要“do”。"
+    ],
+    [
+      "Li",
+      "Lite grann. Jag lär mig. Kan du prata långsammare?",
+      "A little. I'm learning. Can you speak more slowly?",
+      "一点点。我在学。你能说慢一点吗？",
+      "“Lära sig” = to learn (literally “teach oneself”). The most useful sentence for a beginner is the last one.",
+      "“lära sig” 是“学会”，字面是“教自己”。最后一句是初学者最有用的话。"
+    ],
+    [
+      "Anna",
+      "Självklart! Du pratar redan bra.",
+      "Of course! You already speak well.",
+      "当然！你已经说得很好了。"
+    ],
+    [
+      "Li",
+      "Tack! Vi ses!",
+      "Thanks! See you!",
+      "谢谢！回头见！",
+      "“Vi ses” – literally “we see each other” – is the normal casual goodbye.",
+      "“Vi ses” 字面是“我们互相见”，是最常用的随意告别。"
+    ],
+    [
+      "Anna",
+      "Hej då!",
+      "Bye!",
+      "再见！"
+    ]
   ]
 }

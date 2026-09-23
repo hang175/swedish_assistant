@@ -1,0 +1,45 @@
+{
+  "id": "s1e03-campus",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 3: Första dagen på campus", "en": "Episode 3: First day on campus", "zh": "第三集：校园第一天" },
+  "scene": { "en": "Li cannot find the lecture hall, meets a helpful student and then the course teacher.", "zh": "Li 找不到教室，遇到一个热心同学，然后见到了任课老师。" },
+  "intro": {
+    "sv": "Måndag morgon. Li har en föreläsning klockan nio i sal N109, men campus är stort och alla hus ser likadana ut.",
+    "en": "Monday morning. Li has a lecture at nine in room N109, but the campus is big and all the buildings look the same.",
+    "zh": "周一早上。Li 九点在 N109 有课，但校园很大，所有楼看起来都一样。"
+  },
+  "vocab": [
+    { "sv": "föreläsning", "en": "lecture", "zh": "讲座课" },
+    { "sv": "sal", "en": "lecture room, hall", "zh": "教室、大厅" },
+    { "sv": "kurs", "en": "course", "zh": "课程" },
+    { "sv": "termin", "en": "semester", "zh": "学期" },
+    { "sv": "inlämning", "en": "assignment hand-in", "zh": "作业提交" },
+    { "sv": "schema", "en": "timetable", "zh": "课表" },
+    { "sv": "ta det lugnt", "en": "take it easy", "zh": "别急，放轻松" },
+    { "sv": "dua", "en": "to address someone as “du”", "zh": "用“你”称呼对方" }
+  ],
+  "key": [0, 3, 8, 12, 16],
+  "lines": [
+    ["Li", "Ursäkta, vet du var sal N109 ligger?", "Excuse me, do you know where room N109 is?", "打扰一下，你知道 N109 教室在哪吗？", "“Vet du var … ligger?” – indirect question, so the verb comes last in the clause.", "“Vet du var … ligger?” 是间接疑问句，从句里动词放最后。"],
+    ["Student", "N-huset? Det är där borta, det röda. Du går in och tar trappan upp en våning.", "The N building? It's over there, the red one. You go in and take the stairs up one floor.", "N 楼？在那边，红色的那栋。进去后上一层楼。"],
+    ["Li", "Tack! Jag är ny här.", "Thanks! I'm new here.", "谢谢！我是新来的。"],
+    ["Student", "Det märks inte alls. Vilken kurs läser du?", "You can't tell at all. Which course are you taking?", "完全看不出来。你上哪门课？", "“Det märks” = you can tell / it shows. “läsa en kurs” = to take a course.", "“Det märks” = 看得出来。“läsa en kurs” = 上一门课。"],
+    ["Li", "Inbyggda system. Och du?", "Embedded systems. And you?", "嵌入式系统。你呢？"],
+    ["Student", "Samma! Då ses vi där inne. Jag heter Erik, förresten.", "Same! Then I'll see you in there. I'm Erik, by the way.", "一样！那里面见。对了，我叫 Erik。", "“förresten” = by the way.", "“förresten” = 对了/顺便说。"],
+    ["Li", "Li. Trevligt!", "Li. Nice to meet you!", "Li。很高兴认识你！"],
+    ["Läraren", "God morgon allihop! Välkomna till kursen. Jag heter Karin och jag är kursansvarig.", "Good morning everyone! Welcome to the course. My name is Karin and I'm the course coordinator.", "大家早上好！欢迎来上这门课。我叫 Karin，我是这门课的负责人。", "“allihop” = everyone (informal). Teachers introduce themselves by first name – you address them as “du” and “Karin”, never “Professor”.", "“allihop” = 大家（口语）。老师用名字自我介绍，学生用“du”和名字称呼，不叫“教授”。"],
+    ["Läraren", "Schemat finns på kurssidan. Första inlämningen är om två veckor.", "The timetable is on the course page. The first assignment is due in two weeks.", "课表在课程页面上。第一次作业两周后交。", "“om två veckor” = in two weeks from now.", "“om två veckor” = 两周后。"],
+    ["Li", "Ursäkta, Karin? Måste vi jobba i grupp eller ensam?", "Excuse me, Karin? Do we have to work in groups or alone?", "打扰一下，Karin？我们要分组还是单独做？"],
+    ["Läraren", "I grupper om tre. Ni väljer själva. Och prata gärna svenska i grupperna, det är bra övning.", "In groups of three. You choose yourselves. And do speak Swedish in the groups, it's good practice.", "三人一组。你们自己选。小组里尽量说瑞典语，是很好的练习。", "“grupper om tre” = groups of three. “gärna” after a verb = please do / feel free to.", "“grupper om tre” = 三人一组。动词后加“gärna” = 尽管/请。"],
+    ["Erik", "Vi kan vara i samma grupp om du vill.", "We can be in the same group if you like.", "你愿意的话我们可以一组。"],
+    ["Li", "Gärna! Jag pratar inte så bra svenska än.", "Gladly! I don't speak Swedish that well yet.", "好啊！我瑞典语还说得不太好。", "“än” at the end = yet.", "句尾的“än” = 还（没）。"],
+    ["Erik", "Ta det lugnt, du klarar dig. Och min engelska är sämre än din svenska.", "Take it easy, you'll manage. And my English is worse than your Swedish.", "别紧张，你没问题的。而且我的英语比你的瑞典语还差。", "“du klarar dig” = you'll be fine / you'll manage. “sämre än” = worse than.", "“du klarar dig” = 你能行。“sämre än” = 比……差。"],
+    ["Li", "Det tror jag inte på.", "I don't believe that.", "我才不信。", "“Det tror jag inte på” – object first, then verb, then subject (V2 rule).", "“Det tror jag inte på” 宾语放句首，动词第二，主语在后（V2 规则）。"],
+    ["Erik", "Vi behöver en tredje person. Känner du någon?", "We need a third person. Do you know anyone?", "我们还需要第三个人。你认识谁吗？"],
+    ["Li", "Inte än. Jag känner bara dig och en katt.", "Not yet. I only know you and a cat.", "还不认识。我只认识你和一只猫。"],
+    ["Erik", "Haha. Okej, jag frågar Sara. Hon är bra på att räkna.", "Haha. OK, I'll ask Sara. She's good at maths.", "哈哈。好，我问问 Sara。她算数很厉害。", "“bra på att” + verb = good at doing something.", "“bra på att” + 动词 = 擅长做某事。"],
+    ["Li", "Toppen. Har du Discord?", "Great. Do you have Discord?", "太好了。你有 Discord 吗？"],
+    ["Erik", "Självklart. Jag lägger till dig efter föreläsningen.", "Of course. I'll add you after the lecture.", "当然。下课后我加你。", "“lägga till” = to add (a friend, an item).", "“lägga till” = 添加（好友、项目）。"]
+  ]
+}

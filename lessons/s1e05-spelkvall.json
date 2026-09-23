@@ -1,0 +1,46 @@
+{
+  "id": "s1e05-spelkvall",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 5: Spelkväll", "en": "Episode 5: Game night", "zh": "第五集：游戏之夜" },
+  "scene": { "en": "Friday night on voice chat. Li, Erik and Erik's friend Hampus play, lose, and talk about games.", "zh": "周五晚上的语音频道。Li、Erik 和 Erik 的朋友 Hampus 一起打游戏、输掉、聊游戏。" },
+  "intro": {
+    "sv": "Fredag kväll. Li har hörlurar på sig och Bosse sitter i knät. I rösten hör han Erik och en ny kille som heter Hampus.",
+    "en": "Friday night. Li has headphones on and Bosse is sitting in his lap. On voice he hears Erik and a new guy called Hampus.",
+    "zh": "周五晚上。Li 戴着耳机，Bosse 坐在他腿上。语音里是 Erik 和一个叫 Hampus 的新朋友。"
+  },
+  "vocab": [
+    { "sv": "hörlurar", "en": "headphones", "zh": "耳机" },
+    { "sv": "runda", "en": "round (in a game)", "zh": "一局，一轮" },
+    { "sv": "förlora", "en": "to lose", "zh": "输" },
+    { "sv": "vinna", "en": "to win", "zh": "赢" },
+    { "sv": "lagga", "en": "to lag (slang, from English)", "zh": "卡顿（来自英语 lag）" },
+    { "sv": "sikta", "en": "to aim", "zh": "瞄准" },
+    { "sv": "grym", "en": "awesome, great (slang)", "zh": "厉害的，超棒的（俚语）" },
+    { "sv": "kass", "en": "rubbish, bad (slang)", "zh": "很烂的（俚语）" },
+    { "sv": "en gång till", "en": "one more time", "zh": "再来一次" }
+  ],
+  "key": [3, 6, 9, 13, 18],
+  "lines": [
+    ["Erik", "Hör ni mig? Li, är du med?", "Can you hear me? Li, are you there?", "能听见我吗？Li，你在吗？", "“Är du med?” = are you in / are you following? Works for games, plans and explanations.", "“Är du med?” = 你在吗/你跟上了吗？游戏、计划、讲解都能用。"],
+    ["Li", "Jag är med! Hej Hampus.", "I'm here! Hi Hampus.", "我在！你好 Hampus。"],
+    ["Hampus", "Tja! Erik säger att du är ny. Ingen fara, vi förlorar ändå alltid.", "Hey! Erik says you're new. No worries, we always lose anyway.", "嘿！Erik 说你是新手。没关系，反正我们总是输。", "“Ingen fara” = no worries / no harm done.", "“Ingen fara” = 没关系/不要紧。"],
+    ["Erik", "Prata inte om det. Okej, första rundan. Li, du går till vänster med mig.", "Don't talk about it. OK, first round. Li, you go left with me.", "别提这个。好，第一局。Li，你跟我走左边。"],
+    ["Li", "Vänster. Okej. Vänta, vart ska jag?", "Left. OK. Wait, where do I go?", "左边。好。等等，我该去哪？", "“vart” = where to (direction); “var” = where (place).", "“vart” = 去哪（方向）；“var” = 在哪（位置）。"],
+    ["Hampus", "Bakom lådorna! Nej, dom andra lådorna!", "Behind the crates! No, the other crates!", "箱子后面！不，另一边的箱子！"],
+    ["Li", "Förlåt, jag laggar. Eller så är jag bara dålig.", "Sorry, I'm lagging. Or maybe I'm just bad.", "抱歉，我卡了。或者我就是菜。", "“Eller så …” = or else / or maybe. Very common when giving an alternative explanation.", "“Eller så …” = 要不然就是……。给出另一种解释时非常常用。"],
+    ["Erik", "Det är okej! Sikta lite högre. Där! Nice!", "It's fine! Aim a bit higher. There! Nice!", "没事！瞄高一点。对！漂亮！"],
+    ["Hampus", "Vi vann rundan! Li, du är grym.", "We won the round! Li, you're awesome.", "我们赢了这一局！Li，你太厉害了。"],
+    ["Li", "Jag tror det var tur.", "I think it was luck.", "我觉得是运气。", "“tur” = luck; “ha tur” = to be lucky; “otur” = bad luck.", "“tur” = 运气；“ha tur” = 走运；“otur” = 倒霉。"],
+    ["Erik", "Tur räknas. Vilka spel spelar du annars?", "Luck counts. What games do you play otherwise?", "运气也算数。你平时玩什么游戏？", "“annars” = otherwise / apart from that.", "“annars” = 否则/除此之外。"],
+    ["Li", "Mest Zelda och lite Stardew Valley. Lugna spel.", "Mostly Zelda and a bit of Stardew Valley. Calm games.", "主要是塞尔达，还有一点星露谷。休闲游戏。", "“mest” = mostly. “lugn” = calm.", "“mest” = 主要。“lugn” = 平静的。"],
+    ["Hampus", "Stardew! Jag har lagt typ tvåhundra timmar på det. Min fru tror att jag jobbar.", "Stardew! I've put like two hundred hours into it. My wife thinks I'm working.", "星露谷！我玩了差不多两百个小时。我老婆以为我在工作。", "“lägga tid på” = to spend time on.", "“lägga tid på” = 在……上花时间。"],
+    ["Erik", "Fokus, grabbar. Andra rundan.", "Focus, lads. Second round.", "专心，兄弟们。第二局。", "“grabbar” = lads, guys.", "“grabbar” = 小伙子们，兄弟们。"],
+    ["Li", "Åh nej. Jag dog direkt.", "Oh no. I died straight away.", "哦不。我秒死了。", "“direkt” = straight away, immediately.", "“direkt” = 立刻，马上。"],
+    ["Hampus", "Jag med. Det här laget är kass.", "Me too. This team is rubbish.", "我也是。这队太烂了。", "“Jag med” = me too. “kass” = rubbish (slang).", "“Jag med” = 我也是。“kass” = 烂（俚语）。"],
+    ["Erik", "Vi är laget, Hampus.", "We are the team, Hampus.", "我们就是这队，Hampus。"],
+    ["Hampus", "Ja, jag vet.", "Yes, I know.", "是啊，我知道。"],
+    ["Li", "En gång till? Jag har lärt mig var lådorna är nu.", "One more time? I've learned where the crates are now.", "再来一次？我现在知道箱子在哪了。"],
+    ["Erik", "Det är rätt inställning. Sista rundan, sen sover vi.", "That's the right attitude. Last round, then we sleep.", "这心态就对了。最后一局，然后睡觉。", "“sen” is the spoken form of “sedan” (then). “inställning” = attitude / setting.", "“sen” 是 “sedan”（然后）的口语形式。“inställning” = 态度/设置。"]
+  ]
+}

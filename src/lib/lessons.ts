@@ -22,6 +22,12 @@ export interface LessonLine {
 export interface Lesson {
   id: string;
   level: Level;
+  /** group in the list, e.g. "Basics" or "Season 1" */
+  series?: string;
+  /** short narration before the dialogue */
+  intro?: { sv: string; en: string; zh: string };
+  /** indices of the lines worth memorising whole */
+  key?: number[];
   title: { sv: string; en: string; zh: string };
   scene: { en: string; zh: string };
   vocab: { sv: string; en: string; zh: string }[];
@@ -31,6 +37,7 @@ export interface Lesson {
 export interface LessonSummary {
   id: string;
   level: Level;
+  series?: string;
   title: Lesson['title'];
   lines: number;
   wordIds: number[];

@@ -1,0 +1,47 @@
+{
+  "id": "s1e01-inflyttning",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 1: Inflyttningen", "en": "Episode 1: Moving in", "zh": "第一集：搬进来" },
+  "scene": { "en": "Li arrives in Sundsvall with two suitcases and meets Emma, the flatmate, and Bosse, the cat.", "zh": "Li 拖着两个箱子到了松兹瓦尔，见到室友 Emma 和猫 Bosse。" },
+  "intro": {
+    "sv": "Det är slutet av augusti. Li har precis kommit till Sverige för att plugga. Lägenheten ligger på tredje våningen, och det finns ingen hiss.",
+    "en": "It is the end of August. Li has just arrived in Sweden to study. The flat is on the third floor, and there is no lift.",
+    "zh": "八月底。Li 刚到瑞典读书。公寓在三楼，没有电梯。"
+  },
+  "vocab": [
+    { "sv": "inflyttning", "en": "moving in", "zh": "搬入" },
+    { "sv": "resväska", "en": "suitcase", "zh": "行李箱" },
+    { "sv": "trappa", "en": "stairs", "zh": "楼梯" },
+    { "sv": "rumskompis", "en": "flatmate, roommate", "zh": "室友" },
+    { "sv": "sambo", "en": "live-in partner", "zh": "同居伴侣" },
+    { "sv": "diskmaskin", "en": "dishwasher", "zh": "洗碗机" },
+    { "sv": "tvättstuga", "en": "shared laundry room", "zh": "公共洗衣房" },
+    { "sv": "kladdig", "en": "clingy; sticky", "zh": "黏人的；黏糊糊的" },
+    { "sv": "välkommen hem", "en": "welcome home", "zh": "欢迎回家" }
+  ],
+  "key": [2, 5, 9, 14, 20],
+  "lines": [
+    ["Emma", "Hej! Du måste vara Li. Kom in, kom in!", "Hi! You must be Li. Come in, come in!", "嗨！你一定是 Li。进来进来！", "“Du måste vara …” = you must be … – a warm way to greet someone you have only messaged.", "“Du måste vara …” = 你一定是……，用来迎接只聊过没见过的人。"],
+    ["Li", "Hej Emma! Äntligen. Trapporna var… många.", "Hi Emma! Finally. The stairs were… many.", "嗨 Emma！终于到了。楼梯……真多。", "“Äntligen” = finally, at last. The pause “…” is a joke; Swedes enjoy this kind of dry understatement.", "“äntligen” = 终于。省略号是在开玩笑，瑞典人喜欢这种冷幽默式的轻描淡写。"],
+    ["Emma", "Ja, tredje våningen utan hiss. Man blir stark här. Behöver du hjälp med väskorna?", "Yes, third floor without a lift. You get strong here. Do you need help with the bags?", "是啊，三楼没电梯。住这儿会变壮。要帮你拿箱子吗？", "“Man blir …” = one becomes / you get …", "“Man blir …” = 人会变得……"],
+    ["Li", "Ja tack, den här är jättetung.", "Yes please, this one is really heavy.", "好的，谢谢，这个特别重。", "“jätte-” in front of an adjective = really, very: jättetung, jättebra, jättekul.", "“jätte-”加在形容词前 = 非常：jättetung（特别重）、jättebra（特别好）、jättekul（特别有趣）。"],
+    ["Emma", "Oj! Vad har du i den? Stenar?", "Whoa! What have you got in it? Rocks?", "哇！里面装的什么？石头吗？"],
+    ["Li", "Böcker. Och en riskokare. Man vet aldrig.", "Books. And a rice cooker. You never know.", "书。还有一个电饭锅。以防万一。", "“Man vet aldrig” = you never know. Great all-purpose phrase.", "“Man vet aldrig” = 谁知道呢/以防万一。万能句。"],
+    ["Emma", "Haha, smart. Det här är ditt rum. Det är lite litet, men det har ett stort fönster.", "Haha, smart. This is your room. It's a bit small, but it has a big window.", "哈哈，聪明。这是你的房间。有点小，但有个大窗户。", "“lite litet” – “a bit small”; note “litet” is the ett-form of “liten” because “rum” is an ett-word.", "“lite litet” = 有点小；“litet” 是 “liten” 的 ett 形式，因为 rum 是 ett 词。"],
+    ["Li", "Det är perfekt. Vem är det här?", "It's perfect. Who is this?", "太好了。这是谁？"],
+    ["Emma", "Det är Bosse. Han bor också här. Han är lite kladdig, men snäll.", "That's Bosse. He lives here too. He's a bit clingy, but sweet.", "这是 Bosse。他也住这儿。有点黏人，但很乖。"],
+    ["Li", "Hej Bosse. Jag heter Li. Vi kommer att bli vänner.", "Hi Bosse. I'm Li. We're going to be friends.", "你好 Bosse。我叫 Li。我们会成为朋友的。", "“Vi kommer att bli …” = we are going to be …", "“Vi kommer att bli …” = 我们会成为……"],
+    ["Emma", "Köket är här. Diskmaskinen fungerar, men den låter som ett flygplan.", "The kitchen is here. The dishwasher works, but it sounds like an aeroplane.", "厨房在这里。洗碗机能用，但声音像飞机。", "“låter som” = sounds like.", "“låter som” = 听起来像。"],
+    ["Li", "Okej. Och var tvättar man kläder?", "OK. And where do you wash clothes?", "好。那在哪里洗衣服？"],
+    ["Emma", "I tvättstugan i källaren. Man bokar tid på en lista. Jag visar dig imorgon.", "In the laundry room in the basement. You book a time on a list. I'll show you tomorrow.", "地下室的洗衣房。要在表上预约时间。我明天带你去看。", "The shared “tvättstuga” with its booking list is a classic part of Swedish flat life.", "公共洗衣房和预约表是瑞典公寓生活的经典元素。"],
+    ["Li", "Bor du här med någon mer?", "Do you live here with anyone else?", "你还和别人一起住吗？"],
+    ["Emma", "Nej, bara Bosse. Min sambo flyttade ut i våras. Lång historia.", "No, just Bosse. My partner moved out this spring. Long story.", "没有，就 Bosse。我同居的对象今年春天搬走了。说来话长。", "“i våras” = last spring. “Lång historia” = long story – a polite way to close a topic.", "“i våras” = 今年春天（已过去）。“Lång historia” = 说来话长，礼貌地结束话题。"],
+    ["Li", "Förlåt, jag menade inte…", "Sorry, I didn't mean to…", "对不起，我不是想……"],
+    ["Emma", "Nej då, det är lugnt! Är du hungrig? Jag tänkte beställa pizza.", "No no, it's fine! Are you hungry? I was thinking of ordering pizza.", "没事没事，没关系！你饿吗？我想点披萨。", "“Det är lugnt” = it's fine / no worries – very common. “Jag tänkte …” = I was thinking of …", "“Det är lugnt” = 没事/别担心，非常常用。“Jag tänkte …” = 我在想要……"],
+    ["Li", "Ja! Jag har bara ätit en macka på tåget.", "Yes! I've only eaten a sandwich on the train.", "饿！我在火车上就吃了个三明治。", "“macka” is the everyday word for a sandwich (open, Swedish style).", "“macka” 是口语里的三明治（瑞典式开放三明治）。"],
+    ["Emma", "Vad vill du ha på din?", "What do you want on yours?", "你的要什么料？"],
+    ["Li", "Allt utom ananas.", "Anything except pineapple.", "除了菠萝都行。", "“utom” = except.", "“utom” = 除了。"],
+    ["Emma", "Då kommer vi att komma bra överens. Välkommen hem, Li.", "Then we're going to get along fine. Welcome home, Li.", "那我们会处得很好。欢迎回家，Li。", "“komma överens” = to get along / to agree.", "“komma överens” = 合得来/达成一致。"]
+  ]
+}

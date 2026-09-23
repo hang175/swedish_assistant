@@ -36,6 +36,17 @@ for (const lv of LEVELS) {
   }
 }
 
+/** spoken / informal spellings → dictionary form */
+const SPOKEN: Record<string, string> = { sa: 'sade', dom: 'de', sen: 'sedan', nån: 'någon', nåt: 'något', nånting: 'någonting', mej: 'mig', dej: 'dig', sej: 'sig', ska: 'skola', va: 'vad', asså: 'alltså', oxå: 'också' };
+
+/** definite plural “lådorna” → plural “lådor” when the paradigm lacks it */
+function lookup(lower: string): number | undefined {
+  const direct = byForm.get(lower) ?? byForm.get(SPOKEN[lower] ?? '');
+  if (direct !== undefined) return direct;
+  for (const [suf, base] of [['orna', 'or'], ['arna', 'ar'], ['erna', 'er'], ['na', '']] as const) if (lower.endsWith(suf) && lower.length > suf.length + 2) { const id = byForm.get(lower.slice(0, -suf.length) + base); if (id !== undefined) return id; }
+  return undefined;
+}
+
 const WORD = /[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/u;
 
 function tokenize(sv: string, lessonVocab: Set<string>): Token[] {
@@ -72,7 +83,7 @@ function tokenize(sv: string, lessonVocab: Set<string>): Token[] {
     const w = words[i];
     const lower = w.text.toLowerCase();
     if (w.start > last) out.push({ t: sv.slice(last, w.start) });
-    const id = byForm.get(lower);
+    const id = lookup(lower);
     const v = lessonVocab.has(lower) ? lower : undefined;
     out.push({ t: w.text, ...(id !== undefined ? { id } : {}), ...(v ? { v } : {}) });
     last = w.end;
@@ -86,6 +97,9 @@ interface Authored {
   level: Level;
   title: { sv: string; en: string; zh: string };
   scene: { en: string; zh: string };
+  series?: string;
+  intro?: { sv: string; en: string; zh: string };
+  key?: number[];
   vocab?: { sv: string; en: string; zh: string }[];
   lines: (string[] | { l: string[]; audio?: string })[];
 }
@@ -121,9 +135,9 @@ for (const file of files) {
     if (!Array.isArray(raw) && raw.audio) line.audio = raw.audio;
     return line;
   });
-  const lesson: Lesson = { id: a.id, level: a.level, title: a.title, scene: a.scene, vocab, lines };
+  const lesson: Lesson = { id: a.id, level: a.level, title: a.title, scene: a.scene, vocab, lines, ...(a.series ? { series: a.series } : {}), ...(a.intro ? { intro: a.intro } : {}), ...(a.key ? { key: a.key } : {}) };
   fs.writeFileSync(path.join(OUT, `${a.id}.json`), JSON.stringify(lesson));
-  summaries.push({ id: a.id, level: a.level, title: a.title, lines: lines.length, wordIds: [...new Set(lines.flatMap((l) => l.tokens.map((t) => t.id).filter((x): x is number => x !== undefined)))] });
+  summaries.push({ id: a.id, level: a.level, title: a.title, ...(a.series ? { series: a.series } : {}), lines: lines.length, wordIds: [...new Set(lines.flatMap((l) => l.tokens.map((t) => t.id).filter((x): x is number => x !== undefined)))] });
 }
 fs.writeFileSync(path.join(OUT, 'index.json'), JSON.stringify(summaries));
 

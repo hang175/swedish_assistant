@@ -1,25 +1,112 @@
 {
   "id": "09-vadret",
   "level": "A1",
-  "title": { "sv": "Vilket väder!", "en": "What weather!", "zh": "这天气！" },
-  "scene": { "en": "Sara and Li complain about the rain and plan a Sunday hike.", "zh": "Sara 和 Li 抱怨下雨，计划周日去远足。" },
+  "series": "Basics",
+  "title": {
+    "sv": "Vilket väder!",
+    "en": "What weather!",
+    "zh": "这天气！"
+  },
+  "scene": {
+    "en": "Sara and Li complain about the rain and plan a Sunday hike.",
+    "zh": "Sara 和 Li 抱怨下雨，计划周日去远足。"
+  },
   "vocab": [
-    { "sv": "frysa", "en": "to be cold, to freeze", "zh": "觉得冷" },
-    { "sv": "följa med", "en": "to come along", "zh": "一起去" },
-    { "sv": "matsäck", "en": "packed lunch", "zh": "自带的野餐食物" },
-    { "sv": "hur dags", "en": "at what time", "zh": "几点" }
+    {
+      "sv": "frysa",
+      "en": "to be cold, to freeze",
+      "zh": "觉得冷"
+    },
+    {
+      "sv": "följa med",
+      "en": "to come along",
+      "zh": "一起去"
+    },
+    {
+      "sv": "matsäck",
+      "en": "packed lunch",
+      "zh": "自带的野餐食物"
+    },
+    {
+      "sv": "hur dags",
+      "en": "at what time",
+      "zh": "几点"
+    }
   ],
   "lines": [
-    ["Sara", "Vilket väder! Det regnar hela tiden.", "What weather! It rains all the time.", "这什么天气！一直下雨。", "Weather sentences always start with “det”: det regnar, det snöar, det blåser.", "天气句总是以“det”开头：det regnar（下雨）、det snöar（下雪）、det blåser（刮风）。"],
-    ["Li", "Ja, och det är kallt. Jag fryser.", "Yes, and it's cold. I'm freezing.", "是啊，而且很冷。我冻死了。"],
-    ["Sara", "Imorgon ska det bli sol, säger de.", "Tomorrow it's supposed to be sunny, they say.", "他们说明天会出太阳。", "“Ska det bli” – is going to be (a forecast).", "“ska det bli” = 将会是（预报）。"],
-    ["Li", "Skönt! Då kan vi gå ut.", "Lovely! Then we can go out.", "太好了！那我们可以出门了。", "“Skönt!” = nice, what a relief.", "“Skönt!” = 真好、舒服、松了口气。"],
-    ["Sara", "Vill du följa med och vandra på söndag?", "Do you want to come along hiking on Sunday?", "周日想一起去远足吗？"],
-    ["Li", "Ja, det låter kul. Vad ska jag ta med?", "Yes, that sounds fun. What should I bring?", "好啊，听起来很有意思。我要带什么？", "“Det låter kul” – that sounds fun. “Ta med” = bring along.", "“Det låter kul” = 听起来很有趣。“ta med” = 带上。"],
-    ["Sara", "Varma kläder, bra skor och matsäck.", "Warm clothes, good shoes and a packed lunch.", "保暖的衣服、好走的鞋和吃的。"],
-    ["Li", "Hur lång tid tar turen?", "How long does the hike take?", "远足要多久？"],
-    ["Sara", "Ungefär fyra timmar. Vi går tidigt.", "About four hours. We'll leave early.", "大约四小时。我们早点出发。"],
-    ["Li", "Okej, hur dags?", "OK, what time?", "好，几点？"],
-    ["Sara", "Klockan nio vid stationen.", "Nine o'clock at the station.", "九点，在车站。"]
+    [
+      "Sara",
+      "Vilket väder! Det regnar hela tiden.",
+      "What weather! It rains all the time.",
+      "这什么天气！一直下雨。",
+      "Weather sentences always start with “det”: det regnar, det snöar, det blåser.",
+      "天气句总是以“det”开头：det regnar（下雨）、det snöar（下雪）、det blåser（刮风）。"
+    ],
+    [
+      "Li",
+      "Ja, och det är kallt. Jag fryser.",
+      "Yes, and it's cold. I'm freezing.",
+      "是啊，而且很冷。我冻死了。"
+    ],
+    [
+      "Sara",
+      "Imorgon ska det bli sol, säger de.",
+      "Tomorrow it's supposed to be sunny, they say.",
+      "他们说明天会出太阳。",
+      "“Ska det bli” – is going to be (a forecast).",
+      "“ska det bli” = 将会是（预报）。"
+    ],
+    [
+      "Li",
+      "Skönt! Då kan vi gå ut.",
+      "Lovely! Then we can go out.",
+      "太好了！那我们可以出门了。",
+      "“Skönt!” = nice, what a relief.",
+      "“Skönt!” = 真好、舒服、松了口气。"
+    ],
+    [
+      "Sara",
+      "Vill du följa med och vandra på söndag?",
+      "Do you want to come along hiking on Sunday?",
+      "周日想一起去远足吗？"
+    ],
+    [
+      "Li",
+      "Ja, det låter kul. Vad ska jag ta med?",
+      "Yes, that sounds fun. What should I bring?",
+      "好啊，听起来很有意思。我要带什么？",
+      "“Det låter kul” – that sounds fun. “Ta med” = bring along.",
+      "“Det låter kul” = 听起来很有趣。“ta med” = 带上。"
+    ],
+    [
+      "Sara",
+      "Varma kläder, bra skor och matsäck.",
+      "Warm clothes, good shoes and a packed lunch.",
+      "保暖的衣服、好走的鞋和吃的。"
+    ],
+    [
+      "Li",
+      "Hur lång tid tar turen?",
+      "How long does the hike take?",
+      "远足要多久？"
+    ],
+    [
+      "Sara",
+      "Ungefär fyra timmar. Vi går tidigt.",
+      "About four hours. We'll leave early.",
+      "大约四小时。我们早点出发。"
+    ],
+    [
+      "Li",
+      "Okej, hur dags?",
+      "OK, what time?",
+      "好，几点？"
+    ],
+    [
+      "Sara",
+      "Klockan nio vid stationen.",
+      "Nine o'clock at the station.",
+      "九点，在车站。"
+    ]
   ]
 }

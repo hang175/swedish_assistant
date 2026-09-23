@@ -267,3 +267,9 @@ label.inline input[type='range'] { width: 110px; }
   .dline .who { text-align: left; padding-top: 0; }
   .dline .speak { display: none; }
 }
+
+.serieshead { margin: .6rem 0 .5rem; font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.intro { background: var(--accent-soft); font-style: italic; }
+.intro .sv { font-weight: 500; }
+.keylines .example { padding: .3rem .4rem; border-radius: 8px; }
+.keylines .example.current { background: var(--accent-soft); }

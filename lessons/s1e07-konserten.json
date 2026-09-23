@@ -1,0 +1,47 @@
+{
+  "id": "s1e07-konserten",
+  "level": "A1",
+  "series": "Season 1",
+  "title": { "sv": "Avsnitt 7: Konserten", "en": "Episode 7: The concert", "zh": "第七集：演出" },
+  "scene": { "en": "Li goes to his first Swedish concert with Sara: tickets at the door, the queue, and a band member at the merch table.", "zh": "Li 和 Sara 去看他在瑞典的第一场演出：门口买票、排队，还在周边摊位遇到乐队成员。" },
+  "intro": {
+    "sv": "Torsdag kväll, en liten klubb vid hamnen. Det är kallt ute och kön är lång. Sara har glömt att köpa biljetter i förväg.",
+    "en": "Thursday night, a small club by the harbour. It is cold outside and the queue is long. Sara forgot to buy tickets in advance.",
+    "zh": "周四晚上，港口边的一家小俱乐部。外面很冷，队伍很长。Sara 忘了提前买票。"
+  },
+  "vocab": [
+    { "sv": "kö", "en": "queue", "zh": "队伍" },
+    { "sv": "köa", "en": "to queue", "zh": "排队" },
+    { "sv": "i förväg", "en": "in advance", "zh": "提前" },
+    { "sv": "slutsåld", "en": "sold out", "zh": "售罄" },
+    { "sv": "leg", "en": "ID (short for legitimation)", "zh": "证件（legitimation 的简称）" },
+    { "sv": "garderob", "en": "cloakroom", "zh": "衣帽间" },
+    { "sv": "scen", "en": "stage", "zh": "舞台" },
+    { "sv": "förband", "en": "opening act, support band", "zh": "暖场乐队" },
+    { "sv": "tröja", "en": "t-shirt / sweater", "zh": "T恤 / 上衣" },
+    { "sv": "sjukt", "en": "insanely, really (slang)", "zh": "超级（俚语）" }
+  ],
+  "key": [2, 4, 9, 12, 16],
+  "lines": [
+    ["Li", "Det är jättemånga människor här. Är det slutsålt?", "There are loads of people here. Is it sold out?", "这里人好多。卖完了吗？"],
+    ["Sara", "Nej, det brukar finnas biljetter i dörren. Vi köar bara.", "No, there are usually tickets at the door. We just queue.", "没有，门口一般都有票。我们排队就行。", "“brukar” = usually (do). “i dörren” = at the door.", "“brukar” = 通常。“i dörren” = 在门口。"],
+    ["Vakten", "Hej! Leg, tack.", "Hi! ID, please.", "你好！证件，谢谢。", "You will hear “Leg, tack” at every club and at Systembolaget. Have your ID ready.", "在每个俱乐部和 Systembolaget 都会听到 “Leg, tack”。把证件准备好。"],
+    ["Li", "Varsågod. Är ett utländskt körkort okej?", "Here you go. Is a foreign driving licence OK?", "给你。外国驾照可以吗？", "“utländsk” = foreign. “körkort” = driving licence.", "“utländsk” = 外国的。“körkort” = 驾照。"],
+    ["Vakten", "Det går bra. Två biljetter? Det blir tvåhundra kronor.", "That's fine. Two tickets? That's two hundred kronor.", "可以。两张票？一共 200 克朗。", "“Det går bra” = that's fine / that works.", "“Det går bra” = 可以/行。"],
+    ["Sara", "Jag swishar. Vilket nummer?", "I'll pay by Swish. What number?", "我用 Swish 付。什么号码？", "“swisha” – Swish has become a verb.", "“swisha” — Swish 已经变成了动词。"],
+    ["Vakten", "Det står på skylten. Garderoben är till höger, tjugo kronor.", "It's on the sign. The cloakroom is on the right, twenty kronor.", "牌子上有。衣帽间在右边，20 克朗。"],
+    ["Li", "Vilket band spelar först?", "Which band plays first?", "哪个乐队先上？"],
+    ["Sara", "Förbandet, dom heter Kallt Kaffe. Sen kommer huvudbandet vid tio.", "The support band, they're called Kallt Kaffe. Then the main band comes on at ten.", "暖场乐队，叫 Kallt Kaffe。然后主乐队十点上。"],
+    ["Li", "Kallt Kaffe? Det är det bästa bandnamnet jag har hört.", "Cold Coffee? That's the best band name I've heard.", "“冷咖啡”？这是我听过最好的乐队名。", "“det bästa … jag har hört” = the best … I have heard.", "“det bästa … jag har hört” = 我听过最好的……"],
+    ["Sara", "Vänta bara. Kom, vi går närmare scenen.", "Just wait. Come on, let's get closer to the stage.", "等着瞧。走，我们往舞台靠近点。", "“Kom, vi går …” = come on, let's go …", "“Kom, vi går …” = 走，我们去……"],
+    ["Li", "Det är så högt! Jag hör inte vad du säger!", "It's so loud! I can't hear what you're saying!", "太吵了！我听不见你说什么！", "“högt” = loud (also “high”).", "“högt” = 大声（也指“高”）。"],
+    ["Sara", "Vad?", "What?", "什么？"],
+    ["Li", "Jag sa att det är högt!", "I said it's loud!", "我说太吵了！", "Reported speech in the past: “Jag sa att …”", "过去时转述：“Jag sa att …”（我说……）"],
+    ["Sara", "Ja! Det är poängen!", "Yes! That's the point!", "对！这就是重点！"],
+    ["Bandmedlem", "Tjena! Vill ni ha en tröja? Hundrafemtio spänn.", "Hey! Do you want a t-shirt? A hundred and fifty kronor.", "嘿！要 T 恤吗？150 块。", "“spänn” = kronor (slang, like “bucks”).", "“spänn” = 克朗（俚语，像“块”）。"],
+    ["Li", "Var ni Kallt Kaffe? Ni var sjukt bra!", "Were you Kallt Kaffe? You were insanely good!", "你们是 Kallt Kaffe 吗？你们太棒了！", "“sjukt” = insanely / really (slang; literally “sickly”).", "“sjukt” = 超级（俚语，字面是“病态地”）。"],
+    ["Bandmedlem", "Tack! Var kommer du ifrån? Din svenska är bra.", "Thanks! Where are you from? Your Swedish is good.", "谢谢！你是哪里人？你瑞典语不错。"],
+    ["Li", "Kina. Jag har bott här i en månad. Jag tar en tröja i medium.", "China. I've lived here for one month. I'll take a t-shirt in medium.", "中国。我在这儿住了一个月。我要一件 M 码的 T 恤。"],
+    ["Sara", "Ser du? Jag sa ju att du skulle gilla det.", "See? I told you you'd like it.", "看吧？我就说你会喜欢。", "“ju” = as you know / as I said – a little word that means “this is obvious”. “Jag sa ju” = I did tell you.", "“ju” = 你知道的/我说过的，表示“这不是明摆着吗”。“Jag sa ju” = 我早说过。"]
+  ]
+}
